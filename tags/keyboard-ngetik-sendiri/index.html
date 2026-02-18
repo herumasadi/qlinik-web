@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Keyboard Ngetik Sendiri</title>
+    
+	<link rel="stylesheet" href="/css/style.fef001e52fbea84007be468610e112110695601257ff4d8a4d9f5fd951d78839.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<header class="top-bar">
+    <div class="header-left">
+        
+    </div>
+    
+    <div class="header-center">
+       
+    </div>
+    
+    <div class="header-right"></div>
+</header>
+
+    <main>
+        
+
+<div style="padding: 15px;">
+    <div style="position: relative;">
+        <input type="text" id="inputCari" onkeyup="filterProduk()"
+               placeholder="Cari di Qlinik Comp..."
+               style="width:100%; padding:12px; border-radius:10px; border:2px solid #344557; outline:none;">
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div id="daftarItem">
+    
+        <div class="item-card"
+             style="margin-bottom:10px; padding:12px; border-bottom:1px solid #eee;">
+            <a href="/artikel/ghost-typing/"
+               class="nama-item"
+               style="text-decoration:none; color:#333; font-weight:bold;">
+                ⌨️ Laptop &#39;Kesurupan&#39;? Kenapa Keyboard Bisa Ngetik Sendiri dan Cara Mengatasinya!
+            </a>
+        </div>
+    
+</div>
+
+
+
+
+
+
+
+
+<script>
+function filterProduk() {
+    var input = document.getElementById("inputCari").value.toLowerCase();
+    var cards = document.getElementsByClassName("item-card");
+
+    for (var i = 0; i < cards.length; i++) {
+        var nama = cards[i].querySelector(".nama-item").innerText.toLowerCase();
+        cards[i].style.display = nama.includes(input) ? "" : "none";
+    }
+}
+</script>
+
+
+    </main>
+
+<nav class="bottom-nav">
+    <a href="/" class="nav-item ">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+    </a>
+    <a href="/servis/" class="nav-item ">
+        <i class="fas fa-tools"></i>
+        <span>Servis</span>
+    </a>
+    <a href="/katalog/" class="nav-item ">
+        <i class="fas fa-store"></i>
+        <span>Katalog</span>
+    </a>
+    <a href="/artikel/" class="nav-item ">
+        <i class="fas fa-newspaper"></i>
+        <span>Artikel</span>
+    </a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta name="generator" content="Hugo 0.154.5"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Beranda Qlinik Comp</title>
+    
+	<link rel="stylesheet" href="/css/style.fef001e52fbea84007be468610e112110695601257ff4d8a4d9f5fd951d78839.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<header class="top-bar">
+    <div class="header-left">
+        
+    </div>
+    
+    <div class="header-center">
+       
+    </div>
+    
+    <div class="header-right"></div>
+</header>
+
+    <main>
+        
+<div class="carousel-container">
+    <div class="carousel-slider" id="slider">
+        
+		<div class="carousel-item bg-blue" 
+			 style="">
+			<div class="carousel-content" style="">
+				<h1>Qlinik Comp Margoyoso</h1>
+				<p>Servis/upgrde komputer dan Laptop di Margoyoso-Pati.<br> <b>Buka Setiap Hari (08:30 - 21:00 WIB)</b>.<br><i>Alamat : Depan BRI Unit Bulumanis.</i></p>
+				
+				
+				<a href="https://wa.me/6281334104742" class="btn-carousel">Hubungi Kami</a>
+				
+			</div>
+		</div>		
+        
+		<div class="carousel-item bg-orange" 
+			 style="">
+			<div class="carousel-content" style="">
+				<h1>Hal ini sering bikin Laptop Lemot</h1>
+				<p>Temukan penyebab utama laptop lambat, berikut solusi praktis agar kembali ngebut.</p>
+				
+				
+				<a href="artikel/laptop-lemot/" class="btn-carousel">Baca Artikel</a>
+				
+			</div>
+		</div>		
+        
+		<div class="carousel-item bg-purple" 
+			 style="">
+			<div class="carousel-content" style="">
+				<h1>Hal Kecil yang Bisa Bikin Laptop Rusak</h1>
+				<p>Banyak pengguna tidak sadar, hal-hal seperti ini bikin laptop cepat rusaak. Kenali sebelum terlambat.</p>
+				
+				
+				<a href="/artikel/sepele-ngerusak" class="btn-carousel">Baca Sekarang</a>
+				
+			</div>
+		</div>		
+        
+		<div class="carousel-item bg-dark" 
+			 style="">
+			<div class="carousel-content" style="">
+				<h1>Keyboard Mengetik Sendiri?</h1>
+				<p>Fenomena Ghost Typing seringkali dianggap gangguan virus. Padahal ada penyebab teknis yang jarang diketahui pemilik laptop.</p>
+				
+				
+				<a href="/artikel/ghost-typing" class="btn-carousel">Ungkap Rahasianya</a>
+				
+			</div>
+		</div>		
+        
+    </div>
+    
+    <div class="carousel-dots">
+        
+        <span class="dot "></span>
+        
+        <span class="dot "></span>
+        
+        <span class="dot "></span>
+        
+        <span class="dot "></span>
+        
+    </div>
+</div>
+
+
+<style>
+@keyframes kedipHalus {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+.bola-kedip {
+    animation: kedipHalus 2s infinite ease-in-out;
+    display: inline-block;
+}
+</style>
+
+<div id="status-toko-container" style="width: 100%; text-align: center; padding: 7px 0; font-weight: bold; font-family: sans-serif; transition: 0.5s; cursor: default; border-radius: 0px; margin-bottom: 15px;">
+    <div id="status-text">🔄 Memeriksa status toko Qlinik Comp...</div>
+    <div id="waktu-detil" style="font-size: 11px; margin-top: 4px; opacity: 0.8;">Menyinkronkan waktu...</div>
+</div>
+
+<script>
+async function updateStatusToko() {
+    const url = "https://qlinik-comp-status-default-rtdb.asia-southeast1.firebasedatabase.app/status_toko.json";
+    const container = document.getElementById('status-toko-container');
+    const statusText = document.getElementById('status-text');
+    const waktuDetil = document.getElementById('waktu-detil');
+
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        
+        const lastSeenMS = parseInt(data.last_seen); 
+        const nowMS = Date.now();
+        const selisihDetik = Math.abs(nowMS - lastSeenMS) / 1000;
+
+        
+        const dUpdate = new Date(lastSeenMS);
+        const waktuUpdate = dUpdate.getHours().toString().padStart(2, '0') + ":" + dUpdate.getMinutes().toString().padStart(2, '0');
+
+        
+        const dNow = new Date(nowMS);
+        const waktuSekarang = dNow.getHours().toString().padStart(2, '0') + ":" + dNow.getMinutes().toString().padStart(2, '0');
+
+        console.log("Selisih waktu (detik):", selisihDetik);
+
+        if (selisihDetik <= 60) {  
+            container.style.backgroundColor = "#074523"; 
+            container.style.color = "#ffffff";
+            
+            statusText.innerHTML = `<span class="bola-kedip">🟢</span> Status Toko : Sudah Buka (Online)`;
+            
+            waktuDetil.innerHTML = `<i>Status ini terhubung langsung ke Sistem Toko & diperbarui secara Otomatis</i>`;
+        } else {
+            container.style.backgroundColor = "#f1c40f"; 
+            container.style.color = "#000000";
+            statusText.innerHTML = `🔴 Toko masih tutup / Sedang istirahat (Offline)`;
+            waktuDetil.innerHTML = `<i>Terakhir Aktif: ${waktuUpdate} WIB</i>`;
+        }
+		
+    } catch (error) {
+        container.style.backgroundColor = "#ffffff";
+        container.style.color = "#333333";
+        statusText.innerHTML = "⚠️ Status Tidak Tersedia";
+        waktuDetil.innerHTML = "Periksa Koneksi Internet";
+        console.error("Firebase Error:", error);
+    }
+}
+
+updateStatusToko();
+setInterval(updateStatusToko, 30000); 
+</script>
+
+
+<div class="menu-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; padding: 15px;">
+    
+    <a href="https://maps.google.com/?q=Qlinik+Comp+Margoyoso" style="text-decoration: none; color: inherit;">
+        <div class="card" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; border-radius: 15px; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            <i class="fas fa-map-marker-alt" style="font-size: 24px; color: #5f6368; margin-bottom: 8px;"></i>
+            <span style="font-size: 14px; font-weight: 600;">Lokasi Toko</span>
+        </div>
+    </a>
+
+    <a href="/servis/" style="text-decoration: none; color: inherit;">
+        <div class="card" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; border-radius: 15px; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            <i class="fas fa-history" style="font-size: 24px; color: #5f6368; margin-bottom: 8px;"></i>
+            <span style="font-size: 14px; font-weight: 600;">Status Servis</span>
+        </div>
+    </a>
+
+    <a href="https://g.page/r/CfScgZ0cU_gVEBM/review" style="text-decoration: none; color: inherit;">
+        <div class="card" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; border-radius: 15px; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            <i class="fas fa-star" style="font-size: 24px; color: #5f6368; margin-bottom: 8px;"></i>
+            <span style="font-size: 14px; font-weight: 600;">Ulasan</span>
+        </div>
+    </a>
+
+    <a href="https://wa.me/6285162847454" style="text-decoration: none; color: inherit;">
+        <div class="card" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; border-radius: 15px; background: #fff; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+            <i class="fas fa-comment-dots" style="font-size: 24px; color: #5f6368; margin-bottom: 8px;"></i>
+            <span style="font-size: 14px; font-weight: 600;">Hubungi Kami</span>
+        </div>
+    </a>
+    
+</div>
+<div style="padding: 0 20px 20px 20px;">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+        <h3 style="margin: 0; font-size: 16px; color: #333; font-weight: 700;">Produk Terbaru</h3>
+        <a href="/katalog/" style="font-size: 12px; color: #1a73e8; text-decoration: none; font-weight: 600;">Lihat Semua</a>
+    </div>
+
+    <div class="product-grid">
+        
+        <div class="product-card">
+            <div class="product-image">
+                
+                
+                    <img src="/katalog/adaptor-acer/2016498_f72968f4-e024-4967-a869-05eab9ec98d8_700_700.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600.jpeg" style="width: 100%; height: 100%; object-fit: cover;">
+                
+            </div>
+            <div class="product-info">
+                <div class="product-name">Adaptor Charger Laptop ACER (Semua Tipe)</div>
+                <div class="product-price">Rp 170.000 - Rp 200.000</div>
+                <a href="/katalog/adaptor-acer/" style="text-decoration: none;">
+                    <button class="btn-buy" style="width: 100%; margin-top: 5px;">Detail</button>
+                </a>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <div class="product-image">
+                
+                
+                    <img src="/katalog/adaptor-asus/189743692_f499d972-73a5-4d1c-b84e-a40b1213f44d_1184_1184.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600.jpeg" style="width: 100%; height: 100%; object-fit: cover;">
+                
+            </div>
+            <div class="product-info">
+                <div class="product-name">Adaptor Charger Laptop ASUS (Semua Tipe)</div>
+                <div class="product-price">Rp 160.000 - Rp 200.000</div>
+                <a href="/katalog/adaptor-asus/" style="text-decoration: none;">
+                    <button class="btn-buy" style="width: 100%; margin-top: 5px;">Detail</button>
+                </a>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <div class="product-image">
+                
+                
+                    <img src="/katalog/adaptor-dell/1e19ee34-5804-4ac3-a59e-9c2ec86b0bca.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600.jpeg" style="width: 100%; height: 100%; object-fit: cover;">
+                
+            </div>
+            <div class="product-info">
+                <div class="product-name">Adaptor Charger Laptop DELL (Semua Tipe)</div>
+                <div class="product-price">Rp 170.000 - Rp 175.000</div>
+                <a href="/katalog/adaptor-dell/" style="text-decoration: none;">
+                    <button class="btn-buy" style="width: 100%; margin-top: 5px;">Detail</button>
+                </a>
+            </div>
+        </div>
+        
+        <div class="product-card">
+            <div class="product-image">
+                
+                
+                    <img src="/katalog/adaptor-hp-compaq/178619a8-ea35-45cc-a1f4-c216895ba37e.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600.jpeg" style="width: 100%; height: 100%; object-fit: cover;">
+                
+            </div>
+            <div class="product-info">
+                <div class="product-name">Adaptor Charger Laptop HP / COMPAQ (Semua Tipe)</div>
+                <div class="product-price">Rp 170.000 - Rp 175.000</div>
+                <a href="/katalog/adaptor-hp-compaq/" style="text-decoration: none;">
+                    <button class="btn-buy" style="width: 100%; margin-top: 5px;">Detail</button>
+                </a>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<div style="padding: 10px 20px 30px 20px;">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+        <h3 style="margin: 0; font-size: 16px; color: #333; font-weight: 700;">Edukasi & Tips</h3>
+        <a href="/artikel/" style="font-size: 12px; color: #1a73e8; text-decoration: none; font-weight: 600;">Lihat Semua</a>
+    </div>
+
+    <div class="latest-articles-home">
+        
+        <a href="/artikel/test-keyboard/" style="text-decoration: none; color: inherit;">
+            <div class="article-card-home" style="display: flex; gap: 12px; background: white; padding: 12px; border-radius: 12px; margin-bottom: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.03);">
+                <div style="width: 60px; height: 60px; border-radius: 8px; overflow: hidden; flex-shrink: 0; background: #f0f2f5;">
+                    
+                    
+                        <img src="/artikel/test-keyboard/keyboard.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                    
+                </div>
+                <div style="flex-grow: 1;">
+                    <h4 style="margin: 0 0 4px 0; font-size: 14px; color: #333; line-height: 1.4;">⌨️ Jangan Panik Dulu! Begini Cara Tes Keyboard Laptop yang Error, Bisa Online atau Pakai Aplikasi</h4>
+                    <p style="margin: 0; font-size: 12px; color: #777;">
+                        Pernahkah Anda merasa sedang mengetik tapi ada huruf …
+                    </p>
+                </div>
+            </div>
+        </a>
+        
+        <a href="/artikel/ghost-typing/" style="text-decoration: none; color: inherit;">
+            <div class="article-card-home" style="display: flex; gap: 12px; background: white; padding: 12px; border-radius: 12px; margin-bottom: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.03);">
+                <div style="width: 60px; height: 60px; border-radius: 8px; overflow: hidden; flex-shrink: 0; background: #f0f2f5;">
+                    
+                    
+                        <img src="/artikel/ghost-typing/keyboard-kotor.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                    
+                </div>
+                <div style="flex-grow: 1;">
+                    <h4 style="margin: 0 0 4px 0; font-size: 14px; color: #333; line-height: 1.4;">⌨️ Laptop &#39;Kesurupan&#39;? Kenapa Keyboard Bisa Ngetik Sendiri dan Cara Mengatasinya!</h4>
+                    <p style="margin: 0; font-size: 12px; color: #777;">
+                        Pernahkah Anda sedang asyik bekerja, tiba-tiba kursor …
+                    </p>
+                </div>
+            </div>
+        </a>
+        
+        <a href="/artikel/sepele-ngerusak/" style="text-decoration: none; color: inherit;">
+            <div class="article-card-home" style="display: flex; gap: 12px; background: white; padding: 12px; border-radius: 12px; margin-bottom: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.03);">
+                <div style="width: 60px; height: 60px; border-radius: 8px; overflow: hidden; flex-shrink: 0; background: #f0f2f5;">
+                    
+                    
+                        <img src="/artikel/sepele-ngerusak/sepele-ngerusak.jpg" style="width: 100%; height: 100%; object-fit: cover;">
+                    
+                </div>
+                <div style="flex-grow: 1;">
+                    <h4 style="margin: 0 0 4px 0; font-size: 14px; color: #333; line-height: 1.4;">⚠️ Awas! 10 Kebiasaan &#39;Sepele&#39; Ini Sedang Menghancurkan Laptop Anda Secara Perlahan</h4>
+                    <p style="margin: 0; font-size: 12px; color: #777;">
+                        Banyak pengguna laptop datang ke tempat servis dengan …
+                    </p>
+                </div>
+            </div>
+        </a>
+        
+    </div>
+</div>
+
+<script>
+    const slider = document.getElementById('slider');
+    const dots = document.querySelectorAll('.dot');
+    const items = document.querySelectorAll('.carousel-item');
+    let currentIndex = 0;
+
+    
+function scrollToSlide(index) {
+    const slideWidth = slider.offsetWidth;
+    const start = slider.scrollLeft;
+    const end = slideWidth * index;
+    const change = end - start;
+    const duration = 1500; 
+    let startTime = null;
+
+    
+    slider.style.scrollSnapType = 'none';
+
+    function animateScroll(currentTime) {
+        if (!startTime) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const progress = Math.min(timeElapsed / duration, 1);
+        
+        
+        const ease = 1 - Math.pow(1 - progress, 3); 
+        
+        slider.scrollLeft = start + change * ease;
+
+        if (timeElapsed < duration) {
+            requestAnimationFrame(animateScroll);
+        } else {
+            
+            
+            setTimeout(() => {
+                slider.style.scrollSnapType = 'x mandatory';
+            }, 500); 
+        }
+    }
+    requestAnimationFrame(animateScroll);
+}
+    
+    setInterval(() => {
+        currentIndex++;
+        if (currentIndex >= items.length) currentIndex = 0;
+        scrollToSlide(currentIndex);
+    }, 7000);
+
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const index = Array.from(items).indexOf(entry.target);
+                dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+            }
+        });
+    }, { root: slider, threshold: 0.6 });
+
+    items.forEach(item => observer.observe(item));
+</script>
+
+    </main>
+
+<nav class="bottom-nav">
+    <a href="/" class="nav-item active">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+    </a>
+    <a href="/servis/" class="nav-item ">
+        <i class="fas fa-tools"></i>
+        <span>Servis</span>
+    </a>
+    <a href="/katalog/" class="nav-item ">
+        <i class="fas fa-store"></i>
+        <span>Katalog</span>
+    </a>
+    <a href="/artikel/" class="nav-item ">
+        <i class="fas fa-newspaper"></i>
+        <span>Artikel</span>
+    </a>
+</nav>
+</body>
+</html>

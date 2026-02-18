@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Edukasi &amp; Tips</title>
+    
+	<link rel="stylesheet" href="/css/style.fef001e52fbea84007be468610e112110695601257ff4d8a4d9f5fd951d78839.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<header class="top-bar">
+    <div class="header-left">
+        
+    </div>
+    
+    <div class="header-center">
+       
+    </div>
+    
+    <div class="header-right"></div>
+</header>
+
+    <main>
+        
+<div style="padding: 10px 20px 10px 20px; background: #fff;">
+    <h3 style="margin: 5px 0 15px 5px; font-size: 18px; font-weight: 700; color: #444;">Edukasi & Tips</h3>
+    
+    <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+        <select id="filterKategori" onchange="filterSemua()" 
+                style="flex: 1; padding: 10px; border-radius: 10px; border: 1px solid #ddd; background: #f9f9f9; font-size: 14px; outline: none;">
+            <option value="semua">Semua Topik</option>
+            <option value="berita">Berita</option>
+            <option value="informasi">Informasi</option>
+            <option value="tips">Tips & Trik</option>
+        </select>
+
+        <div style="flex: 2; position: relative;">
+            <i class="fas fa-search" style="position: absolute; left: 12px; top: 12px; color: #999; font-size: 14px;"></i>
+            <input type="text" id="inputCari" onkeyup="filterSemua()" 
+                   placeholder="Cari artikel..." 
+                   style="width: 100%; padding: 10px 10px 10px 35px; border-radius: 10px; border: 1px solid #ddd; font-size: 14px; outline: none;">
+        </div>
+    </div>
+</div>
+
+<div id="daftarArtikel" style="padding: 15px; background: #f4f7f9; min-height: 80vh;">
+    <div id="kontainerKartu" style="display: flex; flex-direction: column; gap: 15px;">
+        
+        
+        <div class="article-card" data-category="tips &amp; trik" style="background: #fff; border-radius: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); overflow: hidden;">
+            <a href="/artikel/test-keyboard/" style="text-decoration: none; color: inherit; display: flex; align-items: center; padding: 12px;">
+                <div style="flex: 0 0 80px; height: 80px; border-radius: 12px; overflow: hidden; background: #f0f2f5;">
+                    
+                    
+                        
+                        <img src="/artikel/test-keyboard/keyboard_hu_96cb5d4e9918d97.webp" style="width: 100%; height: 100%; object-fit: cover;">
+                    
+                </div>
+                <div style="flex: 1; margin-left: 15px;">
+                    <h3 class="article-title" style="margin: 0 0 5px 0; font-size: 16px; color: #344557; line-height: 1.3;">⌨️ Jangan Panik Dulu! Begini Cara Tes Keyboard Laptop yang Error, Bisa Online atau Pakai Aplikasi</h3>
+                    <p style="margin: 0; font-size: 13px; color: #777; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                        Pernahkah Anda merasa sedang mengetik tapi ada huruf yang tidak muncul? Atau tiba-tiba kursor lari …
+                    </p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="article-card" data-category="edukasi teknologi" style="background: #fff; border-radius: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); overflow: hidden;">
+            <a href="/artikel/ghost-typing/" style="text-decoration: none; color: inherit; display: flex; align-items: center; padding: 12px;">
+                <div style="flex: 0 0 80px; height: 80px; border-radius: 12px; overflow: hidden; background: #f0f2f5;">
+                    
+                    
+                        
+                        <img src="/artikel/ghost-typing/keyboard-kotor_hu_e354cc17c16f9c25.webp" style="width: 100%; height: 100%; object-fit: cover;">
+                    
+                </div>
+                <div style="flex: 1; margin-left: 15px;">
+                    <h3 class="article-title" style="margin: 0 0 5px 0; font-size: 16px; color: #344557; line-height: 1.3;">⌨️ Laptop &#39;Kesurupan&#39;? Kenapa Keyboard Bisa Ngetik Sendiri dan Cara Mengatasinya!</h3>
+                    <p style="margin: 0; font-size: 13px; color: #777; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                        Pernahkah Anda sedang asyik bekerja, tiba-tiba kursor bergerak sendiri atau muncul deretan huruf …
+                    </p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="article-card" data-category="edukasi teknologi" style="background: #fff; border-radius: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); overflow: hidden;">
+            <a href="/artikel/sepele-ngerusak/" style="text-decoration: none; color: inherit; display: flex; align-items: center; padding: 12px;">
+                <div style="flex: 0 0 80px; height: 80px; border-radius: 12px; overflow: hidden; background: #f0f2f5;">
+                    
+                    
+                        
+                        <img src="/artikel/sepele-ngerusak/sepele-ngerusak_hu_eea5a3ac6321a7b3.webp" style="width: 100%; height: 100%; object-fit: cover;">
+                    
+                </div>
+                <div style="flex: 1; margin-left: 15px;">
+                    <h3 class="article-title" style="margin: 0 0 5px 0; font-size: 16px; color: #344557; line-height: 1.3;">⚠️ Awas! 10 Kebiasaan &#39;Sepele&#39; Ini Sedang Menghancurkan Laptop Anda Secara Perlahan</h3>
+                    <p style="margin: 0; font-size: 13px; color: #777; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                        Banyak pengguna laptop datang ke tempat servis dengan keluhan mati total atau engsel patah, padahal …
+                    </p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="article-card" data-category="teknologi toko" style="background: #fff; border-radius: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); overflow: hidden;">
+            <a href="/artikel/install-ulang-moderen/" style="text-decoration: none; color: inherit; display: flex; align-items: center; padding: 12px;">
+                <div style="flex: 0 0 80px; height: 80px; border-radius: 12px; overflow: hidden; background: #f0f2f5;">
+                    
+                    
+                        
+                        <img src="/artikel/install-ulang-moderen/automation_hu_10d082673ae5c230.webp" style="width: 100%; height: 100%; object-fit: cover;">
+                    
+                </div>
+                <div style="flex: 1; margin-left: 15px;">
+                    <h3 class="article-title" style="margin: 0 0 5px 0; font-size: 16px; color: #344557; line-height: 1.3;">⚡ Bukan Instal Ulang Biasa! Rahasia Kecepatan &#39;Ngebut&#39; Servis di Qlinik Comp Margoyoso</h3>
+                    <p style="margin: 0; font-size: 13px; color: #777; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                        Pernahkah Anda membawa laptop untuk instal ulang dan diminta menunggu hingga seharian atau bahkan …
+                    </p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="article-card" data-category="edukasi teknologi" style="background: #fff; border-radius: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); overflow: hidden;">
+            <a href="/artikel/dac/" style="text-decoration: none; color: inherit; display: flex; align-items: center; padding: 12px;">
+                <div style="flex: 0 0 80px; height: 80px; border-radius: 12px; overflow: hidden; background: #f0f2f5;">
+                    
+                    
+                        
+                        <img src="/artikel/dac/DAC_hu_5f69f3d05d0028e2.webp" style="width: 100%; height: 100%; object-fit: cover;">
+                    
+                </div>
+                <div style="flex: 1; margin-left: 15px;">
+                    <h3 class="article-title" style="margin: 0 0 5px 0; font-size: 16px; color: #344557; line-height: 1.3;">🇮🇩 Mengenal Laptop DAC: Rahasia di Balik TKDN, ODM, dan Transformasi Industri Lokal</h3>
+                    <p style="margin: 0; font-size: 13px; color: #777; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                        Di tengah gempuran brand global, industri teknologi Indonesia mulai menunjukkan taringnya. Salah …
+                    </p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="article-card" data-category="edukasi teknologi" style="background: #fff; border-radius: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); overflow: hidden;">
+            <a href="/artikel/remote-desktop/" style="text-decoration: none; color: inherit; display: flex; align-items: center; padding: 12px;">
+                <div style="flex: 0 0 80px; height: 80px; border-radius: 12px; overflow: hidden; background: #f0f2f5;">
+                    
+                    
+                        
+                        <img src="/artikel/remote-desktop/costumer-service_hu_cc2b5cbd1449c520.webp" style="width: 100%; height: 100%; object-fit: cover;">
+                    
+                </div>
+                <div style="flex: 1; margin-left: 15px;">
+                    <h3 class="article-title" style="margin: 0 0 5px 0; font-size: 16px; color: #344557; line-height: 1.3;">✨ &#39;Sihir&#39; Jarak Jauh: Cara Teknisi Qlinik Comp Service Laptop Anda Tanpa Menyentuh!</h3>
+                    <p style="margin: 0; font-size: 13px; color: #777; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                        Pernahkah Anda membayangkan kursor laptop Anda bergerak sendiri, aplikasi terbuka secara otomatis, …
+                    </p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="article-card" data-category="edukasi hardware" style="background: #fff; border-radius: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); overflow: hidden;">
+            <a href="/artikel/apa-itu-ssd/" style="text-decoration: none; color: inherit; display: flex; align-items: center; padding: 12px;">
+                <div style="flex: 0 0 80px; height: 80px; border-radius: 12px; overflow: hidden; background: #f0f2f5;">
+                    
+                    
+                        
+                        <img src="/artikel/apa-itu-ssd/ssd_hu_8ef95c3d8a51ddab.webp" style="width: 100%; height: 100%; object-fit: cover;">
+                    
+                </div>
+                <div style="flex: 1; margin-left: 15px;">
+                    <h3 class="article-title" style="margin: 0 0 5px 0; font-size: 16px; color: #344557; line-height: 1.3;">🚀 Kenalan dengan SSD: Senjata Rahasia Bikin Laptop Jadul Jadi Berasa Baru!</h3>
+                    <p style="margin: 0; font-size: 13px; color: #777; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                        Sering dengar istilah SSD saat servis di Qlinik Comp atau saat melihat spesifikasi laptop baru? Jika …
+                    </p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="article-card" data-category="edukasi hardware" style="background: #fff; border-radius: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); overflow: hidden;">
+            <a href="/artikel/bad-sector/" style="text-decoration: none; color: inherit; display: flex; align-items: center; padding: 12px;">
+                <div style="flex: 0 0 80px; height: 80px; border-radius: 12px; overflow: hidden; background: #f0f2f5;">
+                    
+                    
+                        
+                        <img src="/artikel/bad-sector/hardisk_hu_d9d90c21629c2104.webp" style="width: 100%; height: 100%; object-fit: cover;">
+                    
+                </div>
+                <div style="flex: 1; margin-left: 15px;">
+                    <h3 class="article-title" style="margin: 0 0 5px 0; font-size: 16px; color: #344557; line-height: 1.3;">🚨 Laptop Lemot Parah? Hati-hati, Harddisk Rusak Bisa Bikin Data Anda Hilang Selamanya!</h3>
+                    <p style="margin: 0; font-size: 13px; color: #777; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                        Banyak pengguna mengira laptop yang lemot hanya butuh instal ulang. Padahal, jika penyebabnya adalah …
+                    </p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="article-card" data-category="edukasi hardware" style="background: #fff; border-radius: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); overflow: hidden;">
+            <a href="/artikel/printer-cepat-rusak/" style="text-decoration: none; color: inherit; display: flex; align-items: center; padding: 12px;">
+                <div style="flex: 0 0 80px; height: 80px; border-radius: 12px; overflow: hidden; background: #f0f2f5;">
+                    
+                    
+                        
+                        <img src="/artikel/printer-cepat-rusak/servis-printer_hu_ddd35ec7c3f831d4.webp" style="width: 100%; height: 100%; object-fit: cover;">
+                    
+                </div>
+                <div style="flex: 1; margin-left: 15px;">
+                    <h3 class="article-title" style="margin: 0 0 5px 0; font-size: 16px; color: #344557; line-height: 1.3;">🖨️ Jangan Asal Pakai! 8 Hal Ini Bikin Printer Anda Cepat Masuk &#39;Unit Gawat Darurat&#39;</h3>
+                    <p style="margin: 0; font-size: 13px; color: #777; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                        Printer adalah investasi penting, baik untuk tugas sekolah, kantor, maupun usaha. Namun, banyak …
+                    </p>
+                </div>
+            </a>
+        </div>
+        
+        <div class="article-card" data-category="" style="background: #fff; border-radius: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); overflow: hidden;">
+            <a href="/artikel/laptop-lemot/" style="text-decoration: none; color: inherit; display: flex; align-items: center; padding: 12px;">
+                <div style="flex: 0 0 80px; height: 80px; border-radius: 12px; overflow: hidden; background: #f0f2f5;">
+                    
+                    
+                        
+                        <img src="/artikel/laptop-lemot/frustasi%20laptop%20lemot_hu_f4b52255e2ad8919.webp" style="width: 100%; height: 100%; object-fit: cover;">
+                    
+                </div>
+                <div style="flex: 1; margin-left: 15px;">
+                    <h3 class="article-title" style="margin: 0 0 5px 0; font-size: 16px; color: #344557; line-height: 1.3;">Hal ini Sering Bikin Laptop Lemot: Kenali Penyebab dan Solusinya!</h3>
+                    <p style="margin: 0; font-size: 13px; color: #777; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                        Pernahkah Anda merasa laptop kesayangan semakin hari semakin lambat? Padahal dulu saat awal beli …
+                    </p>
+                </div>
+            </a>
+        </div>
+        
+    </div>
+
+    <div id="paginasiKontainer">
+    
+    </div>
+</div>
+
+<script>
+
+const bankDataArtikel = [
+    
+    {
+        "judul": "\"⌨️ Jangan Panik Dulu! Begini Cara Tes Keyboard Laptop yang Error, Bisa Online atau Pakai Aplikasi\"",
+        "link": "\/artikel\/test-keyboard\/",
+        "kategori": "tips \u0026 trik",
+        "ringkasan": "\"Pernahkah Anda merasa sedang mengetik tapi ada huruf yang tidak muncul? Atau tiba-tiba kursor lari …\"",
+        "gambar": "\/artikel\/test-keyboard\/keyboard_hu_96cb5d4e9918d97.webp"
+    },
+    
+    {
+        "judul": "\"⌨️ Laptop 'Kesurupan'? Kenapa Keyboard Bisa Ngetik Sendiri dan Cara Mengatasinya!\"",
+        "link": "\/artikel\/ghost-typing\/",
+        "kategori": "edukasi teknologi",
+        "ringkasan": "\"Pernahkah Anda sedang asyik bekerja, tiba-tiba kursor bergerak sendiri atau muncul deretan huruf …\"",
+        "gambar": "\/artikel\/ghost-typing\/keyboard-kotor_hu_e354cc17c16f9c25.webp"
+    },
+    
+    {
+        "judul": "\"⚠️ Awas! 10 Kebiasaan 'Sepele' Ini Sedang Menghancurkan Laptop Anda Secara Perlahan\"",
+        "link": "\/artikel\/sepele-ngerusak\/",
+        "kategori": "edukasi teknologi",
+        "ringkasan": "\"Banyak pengguna laptop datang ke tempat servis dengan keluhan mati total atau engsel patah, padahal …\"",
+        "gambar": "\/artikel\/sepele-ngerusak\/sepele-ngerusak_hu_eea5a3ac6321a7b3.webp"
+    },
+    
+    {
+        "judul": "\"⚡ Bukan Instal Ulang Biasa! Rahasia Kecepatan 'Ngebut' Servis di Qlinik Comp Margoyoso\"",
+        "link": "\/artikel\/install-ulang-moderen\/",
+        "kategori": "teknologi toko",
+        "ringkasan": "\"Pernahkah Anda membawa laptop untuk instal ulang dan diminta menunggu hingga seharian atau bahkan …\"",
+        "gambar": "\/artikel\/install-ulang-moderen\/automation_hu_10d082673ae5c230.webp"
+    },
+    
+    {
+        "judul": "\"🇮🇩 Mengenal Laptop DAC: Rahasia di Balik TKDN, ODM, dan Transformasi Industri Lokal\"",
+        "link": "\/artikel\/dac\/",
+        "kategori": "edukasi teknologi",
+        "ringkasan": "\"Di tengah gempuran brand global, industri teknologi Indonesia mulai menunjukkan taringnya. Salah …\"",
+        "gambar": "\/artikel\/dac\/DAC_hu_5f69f3d05d0028e2.webp"
+    },
+    
+    {
+        "judul": "\"✨ 'Sihir' Jarak Jauh: Cara Teknisi Qlinik Comp Service Laptop Anda Tanpa Menyentuh!\"",
+        "link": "\/artikel\/remote-desktop\/",
+        "kategori": "edukasi teknologi",
+        "ringkasan": "\"Pernahkah Anda membayangkan kursor laptop Anda bergerak sendiri, aplikasi terbuka secara otomatis, …\"",
+        "gambar": "\/artikel\/remote-desktop\/costumer-service_hu_cc2b5cbd1449c520.webp"
+    },
+    
+    {
+        "judul": "\"🚀 Kenalan dengan SSD: Senjata Rahasia Bikin Laptop Jadul Jadi Berasa Baru!\"",
+        "link": "\/artikel\/apa-itu-ssd\/",
+        "kategori": "edukasi hardware",
+        "ringkasan": "\"Sering dengar istilah SSD saat servis di Qlinik Comp atau saat melihat spesifikasi laptop baru? Jika …\"",
+        "gambar": "\/artikel\/apa-itu-ssd\/ssd_hu_8ef95c3d8a51ddab.webp"
+    },
+    
+    {
+        "judul": "\"🚨 Laptop Lemot Parah? Hati-hati, Harddisk Rusak Bisa Bikin Data Anda Hilang Selamanya!\"",
+        "link": "\/artikel\/bad-sector\/",
+        "kategori": "edukasi hardware",
+        "ringkasan": "\"Banyak pengguna mengira laptop yang lemot hanya butuh instal ulang. Padahal, jika penyebabnya adalah …\"",
+        "gambar": "\/artikel\/bad-sector\/hardisk_hu_d9d90c21629c2104.webp"
+    },
+    
+    {
+        "judul": "\"🖨️ Jangan Asal Pakai! 8 Hal Ini Bikin Printer Anda Cepat Masuk 'Unit Gawat Darurat'\"",
+        "link": "\/artikel\/printer-cepat-rusak\/",
+        "kategori": "edukasi hardware",
+        "ringkasan": "\"Printer adalah investasi penting, baik untuk tugas sekolah, kantor, maupun usaha. Namun, banyak …\"",
+        "gambar": "\/artikel\/printer-cepat-rusak\/servis-printer_hu_ddd35ec7c3f831d4.webp"
+    },
+    
+    {
+        "judul": "\"Hal ini Sering Bikin Laptop Lemot: Kenali Penyebab dan Solusinya!\"",
+        "link": "\/artikel\/laptop-lemot\/",
+        "kategori": "",
+        "ringkasan": "\"Pernahkah Anda merasa laptop kesayangan semakin hari semakin lambat? Padahal dulu saat awal beli …\"",
+        "gambar": "\/artikel\/laptop-lemot\/frustasi%20laptop%20lemot_hu_f4b52255e2ad8919.webp"
+    },
+    
+];
+
+
+const htmlArtikelAsli = document.getElementById('kontainerKartu').innerHTML;
+const htmlPaginasiAsli = document.getElementById('paginasiKontainer').innerHTML;
+
+function filterSemua() {
+    const kategori = document.getElementById("filterKategori").value.toLowerCase();
+    const cari = document.getElementById("inputCari").value.toLowerCase();
+    const kontainer = document.getElementById("kontainerKartu");
+    const paginasi = document.getElementById("paginasiKontainer");
+
+    
+    if (kategori === "semua" && cari === "") {
+        kontainer.innerHTML = htmlArtikelAsli;
+        paginasi.innerHTML = htmlPaginasiAsli;
+        return;
+    }
+
+    
+    paginasi.innerHTML = "";
+
+    
+    const hasil = bankDataArtikel.filter(item => {
+        const cocokKategori = (kategori === "semua" || item.kategori === kategori);
+        const cocokCari = item.judul.toLowerCase().includes(cari);
+        return cocokKategori && cocokCari;
+    });
+
+    
+    if (hasil.length > 0) {
+        kontainer.innerHTML = hasil.map(item => `
+            <div class="article-card" style="background: #fff; border-radius: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); overflow: hidden;">
+                <a href="${item.link}" style="text-decoration: none; color: inherit; display: flex; align-items: center; padding: 12px;">
+                    <div style="flex: 0 0 80px; height: 80px; border-radius: 12px; overflow: hidden; background: #f0f2f5;">
+                        ${item.gambar !== 'placeholder' ? `<img src="${item.gambar}" style="width: 100%; height: 100%; object-fit: cover;">` : `<div style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #ccc;"><i class="fas fa-newspaper" style="font-size: 24px;"></i></div>`}
+                    </div>
+                    <div style="flex: 1; margin-left: 15px;">
+                        <h3 class="article-title" style="margin: 0 0 5px 0; font-size: 16px; color: #344557; line-height: 1.3;">${item.judul}</h3>
+                        <p style="margin: 0; font-size: 13px; color: #777; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                            ${item.ringkasan}
+                        </p>
+                    </div>
+                </a>
+            </div>
+        `).join('');
+    } else {
+        kontainer.innerHTML = `<div style="text-align: center; padding: 50px; color: #999;">Artikel tidak ditemukan...</div>`;
+    }
+}
+</script>
+
+    </main>
+
+<nav class="bottom-nav">
+    <a href="/" class="nav-item ">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+    </a>
+    <a href="/servis/" class="nav-item ">
+        <i class="fas fa-tools"></i>
+        <span>Servis</span>
+    </a>
+    <a href="/katalog/" class="nav-item ">
+        <i class="fas fa-store"></i>
+        <span>Katalog</span>
+    </a>
+    <a href="/artikel/" class="nav-item active">
+        <i class="fas fa-newspaper"></i>
+        <span>Artikel</span>
+    </a>
+</nav>
+</body>
+</html>

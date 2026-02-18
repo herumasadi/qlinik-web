@@ -1,0 +1,2203 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Katalog Sparepart</title>
+    
+	<link rel="stylesheet" href="/css/style.fef001e52fbea84007be468610e112110695601257ff4d8a4d9f5fd951d78839.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+<header class="top-bar">
+    <div class="header-left">
+        
+    </div>
+    
+    <div class="header-center">
+       
+    </div>
+    
+    <div class="header-right"></div>
+</header>
+
+    <main>
+        
+<div style="padding: 10px 20px 10px 20px; background: #fff;">
+    <h3 style="margin: 5px 0 15px 5px; font-size: 18px; font-weight: 700; color: #444;">Katalog Produk</h3>
+    
+    <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+        <select id="filterKategori" onchange="filterSemua()" 
+                style="flex: 1; padding: 10px; border-radius: 10px; border: 1px solid #ddd; background: #f9f9f9; font-size: 14px; outline: none;">
+            <option value="semua">Semua Kategori</option>
+            <option value="komponen">Sparepart</option>
+            <option value="aksesoris">Aksesoris</option>
+            <option value="konektivitas">Konektivitas</option>
+			<option value="networking">Jaringan</option>
+			<option value="tinta">Printer Inks</option>
+			<option value="adaptor">Adaptor</option>
+			<option value="penyimpanan">Penyimpanan</option>
+			
+			
+			
+            <option value="jasa">Jasa</option>			
+        </select>
+
+        <div style="flex: 2; position: relative;">
+            <i class="fas fa-search" style="position: absolute; left: 12px; top: 12px; color: #999; font-size: 14px;"></i>
+            <input type="text" id="inputCari" onkeyup="filterSemua()" 
+                   placeholder="Cari produk..." 
+                   style="width: 100%; padding: 10px 10px 10px 35px; border-radius: 10px; border: 1px solid #ddd; font-size: 14px; outline: none;">
+        </div>
+    </div>
+</div>
+
+<div id="daftarProduk" class="product-grid" style="padding: 10px 15px 20px 15px; display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
+    
+    
+    <div class="product-card" data-category="aksesoris">
+        <a href="/katalog/0135-speaker-advance-cls-101/" style="text-decoration: none; color: inherit;">
+            <div class="product-image" style="height: 150px; background: #f0f2f5; border-radius: 12px; overflow: hidden;">
+                
+                
+                    
+                    <img src="/katalog/0135-speaker-advance-cls-101/d27042db0a434450a3585c54c0bb2469~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_e75ec33cf4188e2e.webp" style="width: 100%; height: 100%; object-fit: cover;">
+                
+            </div>
+            <div class="product-info" style="padding: 8px;">
+                <div class="product-name" style="font-size: 13px; font-weight: 600; line-height: 1.4; height: 38px; overflow: hidden;">
+                    Speaker Multimedia Advance CLS-101 RGB
+                </div>
+                <div class="product-price" style="color: #d93025; font-weight: bold; font-size: 13px; margin-top: 5px;">
+                    Rp 70.000
+                </div>
+            </div>
+        </a>
+    </div>
+    
+    <div class="product-card" data-category="aksesoris">
+        <a href="/katalog/0102-speaker-usb-2.0-101z/" style="text-decoration: none; color: inherit;">
+            <div class="product-image" style="height: 150px; background: #f0f2f5; border-radius: 12px; overflow: hidden;">
+                
+                
+                    
+                    <img src="/katalog/0102-speaker-usb-2.0-101z/9a4a6773-3293-4fab-a2a5-da7a050bb7f3.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_b0150906523902fe.webp" style="width: 100%; height: 100%; object-fit: cover;">
+                
+            </div>
+            <div class="product-info" style="padding: 8px;">
+                <div class="product-name" style="font-size: 13px; font-weight: 600; line-height: 1.4; height: 38px; overflow: hidden;">
+                    Speaker Multimedia USB 2.0 101Z
+                </div>
+                <div class="product-price" style="color: #d93025; font-weight: bold; font-size: 13px; margin-top: 5px;">
+                    Rp 40.000
+                </div>
+            </div>
+        </a>
+    </div>
+    
+    <div class="product-card" data-category="aksesoris">
+        <a href="/katalog/0197-speaker-m-tech-a2/" style="text-decoration: none; color: inherit;">
+            <div class="product-image" style="height: 150px; background: #f0f2f5; border-radius: 12px; overflow: hidden;">
+                
+                
+                    
+                    <img src="/katalog/0197-speaker-m-tech-a2/d486e521-91bc-4e58-9ce9-6078adb2dda8.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_665766c8848d04b4.webp" style="width: 100%; height: 100%; object-fit: cover;">
+                
+            </div>
+            <div class="product-info" style="padding: 8px;">
+                <div class="product-name" style="font-size: 13px; font-weight: 600; line-height: 1.4; height: 38px; overflow: hidden;">
+                    Speaker Multimedia USB 2.0 M-Tech A2 Stereo
+                </div>
+                <div class="product-price" style="color: #d93025; font-weight: bold; font-size: 13px; margin-top: 5px;">
+                    Rp 70.000
+                </div>
+            </div>
+        </a>
+    </div>
+    
+    <div class="product-card" data-category="aksesoris">
+        <a href="/katalog/0051-speaker-robot-rs180/" style="text-decoration: none; color: inherit;">
+            <div class="product-image" style="height: 150px; background: #f0f2f5; border-radius: 12px; overflow: hidden;">
+                
+                
+                    
+                    <img src="/katalog/0051-speaker-robot-rs180/89f92000-1c25-4d05-8b95-e188f308da24.jpg_hu_806cee16685c96c3.webp" style="width: 100%; height: 100%; object-fit: cover;">
+                
+            </div>
+            <div class="product-info" style="padding: 8px;">
+                <div class="product-name" style="font-size: 13px; font-weight: 600; line-height: 1.4; height: 38px; overflow: hidden;">
+                    Speaker Robot RS180 Gaming Stereo
+                </div>
+                <div class="product-price" style="color: #d93025; font-weight: bold; font-size: 13px; margin-top: 5px;">
+                    Rp 75.000
+                </div>
+            </div>
+        </a>
+    </div>
+    
+    <div class="product-card" data-category="penyimpanan">
+        <a href="/katalog/0183-teamgroup-mp33-256gb/" style="text-decoration: none; color: inherit;">
+            <div class="product-image" style="height: 150px; background: #f0f2f5; border-radius: 12px; overflow: hidden;">
+                
+                
+                    
+                    <img src="/katalog/0183-teamgroup-mp33-256gb/74de9435-4887-4278-b07f-be1635026519.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_f59870350572b013.webp" style="width: 100%; height: 100%; object-fit: cover;">
+                
+            </div>
+            <div class="product-info" style="padding: 8px;">
+                <div class="product-name" style="font-size: 13px; font-weight: 600; line-height: 1.4; height: 38px; overflow: hidden;">
+                    SSD NVMe TeamGroup MP33 M.2 PCIe Gen3 x4
+                </div>
+                <div class="product-price" style="color: #d93025; font-weight: bold; font-size: 13px; margin-top: 5px;">
+                    Rp 500.000 - Rp 750.000
+                </div>
+            </div>
+        </a>
+    </div>
+    
+    <div class="product-card" data-category="penyimpanan">
+        <a href="/katalog/0184-teamgroup-mp33-512gb/" style="text-decoration: none; color: inherit;">
+            <div class="product-image" style="height: 150px; background: #f0f2f5; border-radius: 12px; overflow: hidden;">
+                
+                
+                    
+                    <img src="/katalog/0184-teamgroup-mp33-512gb/9eddecae-fca6-49f9-b263-a0d1fdbec341.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_4718c1cfc0ea106d.webp" style="width: 100%; height: 100%; object-fit: cover;">
+                
+            </div>
+            <div class="product-info" style="padding: 8px;">
+                <div class="product-name" style="font-size: 13px; font-weight: 600; line-height: 1.4; height: 38px; overflow: hidden;">
+                    SSD NVMe TeamGroup MP33 M.2 PCIe Gen3 x4
+                </div>
+                <div class="product-price" style="color: #d93025; font-weight: bold; font-size: 13px; margin-top: 5px;">
+                    Rp 500.000 - Rp 750.000
+                </div>
+            </div>
+        </a>
+    </div>
+    
+    <div class="product-card" data-category="penyimpanan">
+        <a href="/katalog/0108-ssd-sata-ovation-128gb/" style="text-decoration: none; color: inherit;">
+            <div class="product-image" style="height: 150px; background: #f0f2f5; border-radius: 12px; overflow: hidden;">
+                
+                
+                    
+                    <img src="/katalog/0108-ssd-sata-ovation-128gb/daef8c77-fd31-45dd-81d7-261b23c530e0.jpg~tplv-aphluv4xwc-resize-jpeg_600_0_hu_9369101c152c5ae5.webp" style="width: 100%; height: 100%; object-fit: cover;">
+                
+            </div>
+            <div class="product-info" style="padding: 8px;">
+                <div class="product-name" style="font-size: 13px; font-weight: 600; line-height: 1.4; height: 38px; overflow: hidden;">
+                    SSD SATA 2.5 Inch Ovation 128GB
+                </div>
+                <div class="product-price" style="color: #d93025; font-weight: bold; font-size: 13px; margin-top: 5px;">
+                    Rp 350.000
+                </div>
+            </div>
+        </a>
+    </div>
+    
+    <div class="product-card" data-category="penyimpanan">
+        <a href="/katalog/0087-ssd-sata-ovation-256gb/" style="text-decoration: none; color: inherit;">
+            <div class="product-image" style="height: 150px; background: #f0f2f5; border-radius: 12px; overflow: hidden;">
+                
+                
+                    
+                    <img src="/katalog/0087-ssd-sata-ovation-256gb/d6803b2abd9d4e1c9ab1f5f3857cf236~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_2bc2fb7399c85f10.webp" style="width: 100%; height: 100%; object-fit: cover;">
+                
+            </div>
+            <div class="product-info" style="padding: 8px;">
+                <div class="product-name" style="font-size: 13px; font-weight: 600; line-height: 1.4; height: 38px; overflow: hidden;">
+                    SSD SATA 2.5 Inch Ovation 256GB
+                </div>
+                <div class="product-price" style="color: #d93025; font-weight: bold; font-size: 13px; margin-top: 5px;">
+                    Rp 450.000
+                </div>
+            </div>
+        </a>
+    </div>
+    
+    <div class="product-card" data-category="penyimpanan">
+        <a href="/katalog/0149-ssd-sata-techbyte-2546gb/" style="text-decoration: none; color: inherit;">
+            <div class="product-image" style="height: 150px; background: #f0f2f5; border-radius: 12px; overflow: hidden;">
+                
+                
+                    
+                    <img src="/katalog/0149-ssd-sata-techbyte-2546gb/680288f8-43c7-4d16-b1ae-b82d6627d8f8.jpg~tplv-aphluv4xwc-resize-jpeg_700_0_hu_6fc2f59fce921737.webp" style="width: 100%; height: 100%; object-fit: cover;">
+                
+            </div>
+            <div class="product-info" style="padding: 8px;">
+                <div class="product-name" style="font-size: 13px; font-weight: 600; line-height: 1.4; height: 38px; overflow: hidden;">
+                    SSD SATA 2.5 Inch TechByte 256GB
+                </div>
+                <div class="product-price" style="color: #d93025; font-weight: bold; font-size: 13px; margin-top: 5px;">
+                    Rp 450.000
+                </div>
+            </div>
+        </a>
+    </div>
+    
+    <div class="product-card" data-category="penyimpanan">
+        <a href="/katalog/0185-adata-su650-512gb/" style="text-decoration: none; color: inherit;">
+            <div class="product-image" style="height: 150px; background: #f0f2f5; border-radius: 12px; overflow: hidden;">
+                
+                
+                    
+                    <img src="/katalog/0185-adata-su650-512gb/8ccbdecf-55f4-4997-b499-109eaed9a041.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_1dc2c193b61bc5ea.webp" style="width: 100%; height: 100%; object-fit: cover;">
+                
+            </div>
+            <div class="product-info" style="padding: 8px;">
+                <div class="product-name" style="font-size: 13px; font-weight: 600; line-height: 1.4; height: 38px; overflow: hidden;">
+                    SSD SATA Adata Ultimate SU650 512GB
+                </div>
+                <div class="product-price" style="color: #d93025; font-weight: bold; font-size: 13px; margin-top: 5px;">
+                    Rp 650.000
+                </div>
+            </div>
+        </a>
+    </div>
+    
+</div>
+
+<div id="paginasiKontainer">
+
+<div class="pagination" style="display: flex; justify-content: center; align-items: center; gap: 5px; padding: 20px 0 30px 0; flex-wrap: wrap; font-family: sans-serif;">
+    
+        <a href="/katalog/page/15/" style="padding: 8px 12px; background: #f0f2f5; border-radius: 8px; text-decoration: none; color: #333;">&laquo;</a>
+    
+
+    
+        
+        
+            
+        
+
+        
+            <a href="/katalog/" style="padding: 8px 14px; border-radius: 8px; text-decoration: none; font-weight: bold; min-width: 40px; text-align: center;  background: #f0f2f5; color: #333; ">
+                1
+            </a>
+        
+    
+        
+        
+
+        
+    
+        
+        
+
+        
+    
+        
+        
+
+        
+    
+        
+        
+
+        
+    
+        
+        
+
+        
+    
+        
+        
+
+        
+    
+        
+        
+
+        
+    
+        
+        
+
+        
+    
+        
+        
+
+        
+    
+        
+        
+
+        
+    
+        
+        
+
+        
+    
+        
+        
+
+        
+            <span style="color: #ccc;">...</span>
+        
+    
+        
+        
+            
+        
+
+        
+            <a href="/katalog/page/14/" style="padding: 8px 14px; border-radius: 8px; text-decoration: none; font-weight: bold; min-width: 40px; text-align: center;  background: #f0f2f5; color: #333; ">
+                14
+            </a>
+        
+    
+        
+        
+            
+        
+
+        
+            <a href="/katalog/page/15/" style="padding: 8px 14px; border-radius: 8px; text-decoration: none; font-weight: bold; min-width: 40px; text-align: center;  background: #f0f2f5; color: #333; ">
+                15
+            </a>
+        
+    
+        
+        
+            
+        
+
+        
+            <a href="/katalog/page/16/" style="padding: 8px 14px; border-radius: 8px; text-decoration: none; font-weight: bold; min-width: 40px; text-align: center;  background: #344557; color: white; ">
+                16
+            </a>
+        
+    
+        
+        
+            
+        
+
+        
+            <a href="/katalog/page/17/" style="padding: 8px 14px; border-radius: 8px; text-decoration: none; font-weight: bold; min-width: 40px; text-align: center;  background: #f0f2f5; color: #333; ">
+                17
+            </a>
+        
+    
+        
+        
+            
+        
+
+        
+            <a href="/katalog/page/18/" style="padding: 8px 14px; border-radius: 8px; text-decoration: none; font-weight: bold; min-width: 40px; text-align: center;  background: #f0f2f5; color: #333; ">
+                18
+            </a>
+        
+    
+        
+        
+
+        
+            <span style="color: #ccc;">...</span>
+        
+    
+        
+        
+
+        
+    
+        
+        
+
+        
+    
+        
+        
+            
+        
+
+        
+            <a href="/katalog/page/22/" style="padding: 8px 14px; border-radius: 8px; text-decoration: none; font-weight: bold; min-width: 40px; text-align: center;  background: #f0f2f5; color: #333; ">
+                22
+            </a>
+        
+    
+
+    
+        <a href="/katalog/page/17/" style="padding: 8px 12px; background: #f0f2f5; border-radius: 8px; text-decoration: none; color: #333;">&raquo;</a>
+    
+</div>
+
+</div>
+
+<script>
+
+const bankDataKatalog = [
+    
+    {
+        "judul": "\"Adaptor Charger Laptop ACER (Semua Tipe)\"",
+        "link": "\/katalog\/adaptor-acer\/",
+        "kategori": "adaptor",
+        "harga": "Rp 170.000 - Rp 200.000",
+        "gambar": "\/katalog\/adaptor-acer\/2016498_f72968f4-e024-4967-a869-05eab9ec98d8_700_700.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_801c132607bc7aba.webp"
+    },
+    
+    {
+        "judul": "\"Adaptor Charger Laptop ASUS (Semua Tipe)\"",
+        "link": "\/katalog\/adaptor-asus\/",
+        "kategori": "adaptor",
+        "harga": "Rp 160.000 - Rp 200.000",
+        "gambar": "\/katalog\/adaptor-asus\/189743692_f499d972-73a5-4d1c-b84e-a40b1213f44d_1184_1184.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_fbbea54562569cb5.webp"
+    },
+    
+    {
+        "judul": "\"Adaptor Charger Laptop DELL (Semua Tipe)\"",
+        "link": "\/katalog\/adaptor-dell\/",
+        "kategori": "adaptor",
+        "harga": "Rp 170.000 - Rp 175.000",
+        "gambar": "\/katalog\/adaptor-dell\/1e19ee34-5804-4ac3-a59e-9c2ec86b0bca.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_51b1436743c26ca5.webp"
+    },
+    
+    {
+        "judul": "\"Adaptor Charger Laptop HP / COMPAQ (Semua Tipe)\"",
+        "link": "\/katalog\/adaptor-hp-compaq\/",
+        "kategori": "adaptor",
+        "harga": "Rp 170.000 - Rp 175.000",
+        "gambar": "\/katalog\/adaptor-hp-compaq\/178619a8-ea35-45cc-a1f4-c216895ba37e.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_a9ebf90d84d91403.webp"
+    },
+    
+    {
+        "judul": "\"Adaptor Charger Laptop LENOVO (Semua Tipe)\"",
+        "link": "\/katalog\/adaptor-lenovo\/",
+        "kategori": "adaptor",
+        "harga": "Rp 170.000 - Rp 285.000",
+        "gambar": "\/katalog\/adaptor-lenovo\/bce59cd2-c75a-4cda-9708-fea3eeaee766.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_87611b299e67ef7.webp"
+    },
+    
+    {
+        "judul": "\"Adaptor VISERO Universal 12V 2A\"",
+        "link": "\/katalog\/0180-adaptor-visero-12v-2a\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 35.000",
+        "gambar": "\/katalog\/0180-adaptor-visero-12v-2a\/afafasf_hu_4be6512e92bd98da.webp"
+    },
+    
+    {
+        "judul": "\"Adaptor VISERO Universal 5V 2A\"",
+        "link": "\/katalog\/0178-adaptor-visero-5v-2a\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 35.000",
+        "gambar": "\/katalog\/0178-adaptor-visero-5v-2a\/asdad_hu_bc738a51f590a9e6.webp"
+    },
+    
+    {
+        "judul": "\"Adaptor VISERO Universal 9V 2A\"",
+        "link": "\/katalog\/0179-adaptor-visero-9v-2a\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 35.000",
+        "gambar": "\/katalog\/0179-adaptor-visero-9v-2a\/asdadasd_hu_11ab507218584f55.webp"
+    },
+    
+    {
+        "judul": "\"Barel RJ45 Penyambung Kabel LAN\"",
+        "link": "\/katalog\/0049-rj45-barel-sambungan\/",
+        "kategori": "networking",
+        "harga": "Rp 8.000",
+        "gambar": "\/katalog\/0049-rj45-barel-sambungan\/4277593_bc6f5310-ad7a-4cb1-bd2d-8f5b483cb304_1001_1001~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_db19930a49d7b13a.webp"
+    },
+    
+    {
+        "judul": "\"Baterai CMOS CR2032\"",
+        "link": "\/katalog\/0001-baterai-cmos-cr2032\/",
+        "kategori": "komponen",
+        "harga": "Rp 5.000",
+        "gambar": "\/katalog\/0001-baterai-cmos-cr2032\/a189fa8c-6e61-417c-80b3-5283303c92e0.jpg~tplv-aphluv4xwc-resize-jpeg_700_0%20%281%29_hu_fe8f5e5337f08e0d.webp"
+    },
+    
+    {
+        "judul": "\"Baterai CMOS Kabel Socket\"",
+        "link": "\/katalog\/0002-baterai-cmos-kabel-socket\/",
+        "kategori": "komponen",
+        "harga": "Rp 18.000",
+        "gambar": "\/katalog\/0002-baterai-cmos-kabel-socket\/ee5597db-7285-4427-93f7-1325712e2dee.jpg~tplv-aphluv4xwc-resize-jpeg_700_0_hu_374bee0e578d68c0.webp"
+    },
+    
+    {
+        "judul": "\"Baterai Laptop Toshiba PA3817U-1BRS (OEM)\"",
+        "link": "\/katalog\/0107-baterai-toshiba-3817-oem\/",
+        "kategori": "komponen",
+        "harga": "Rp 270.000",
+        "gambar": "\/katalog\/0107-baterai-toshiba-3817-oem\/35282680_e541ab51-cced-4226-9262-6b6b2867a30d_600_450.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_6b44a22356a67100.webp"
+    },
+    
+    {
+        "judul": "\"Blueprint Starter Pack Tinta (Reffil Kit)\"",
+        "link": "\/katalog\/0104-blueprint-starter-pack-canon\/",
+        "kategori": "tinta",
+        "harga": "Rp 50.000",
+        "gambar": "\/katalog\/0104-blueprint-starter-pack-canon\/4e8eaf17583f447594a7c3289d959922~tplv-o3syd03w52-resize-jpeg_1600_1600_hu_f9cdde52ed7d94ef.webp"
+    },
+    
+    {
+        "judul": "\"Blueprint Starter Pack Tinta (Reffil Kit)\"",
+        "link": "\/katalog\/0105-blueprint-starter-pack-epson\/",
+        "kategori": "tinta",
+        "harga": "Rp 50.000",
+        "gambar": "\/katalog\/0105-blueprint-starter-pack-epson\/c8434252a21241319d6c62a29b806d35~tplv-o3syd03w52-resize-jpeg_1600_1600_hu_f2da91fb93087c83.webp"
+    },
+    
+    {
+        "judul": "\"Blueprint Starter Pack Tinta (Reffil Kit)\"",
+        "link": "\/katalog\/0106-blueprint-starter-pack-hp\/",
+        "kategori": "tinta",
+        "harga": "Rp 50.000",
+        "gambar": "\/katalog\/0106-blueprint-starter-pack-hp\/05a44c515d3f414287e0fdca882fea49~tplv-o3syd03w52-resize-jpeg_1600_1600_hu_f1bb4d88218a93f5.webp"
+    },
+    
+    {
+        "judul": "\"Caddy Second HDD 12.7mm\"",
+        "link": "\/katalog\/0004-caddy-second-hdd-12.7mm\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 40.000",
+        "gambar": "\/katalog\/0004-caddy-second-hdd-12.7mm\/37686350-ec51-46e7-9b7b-adc3d1400520.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_362e8280934e3e0f.webp"
+    },
+    
+    {
+        "judul": "\"Caddy Second HDD 9.5mm\"",
+        "link": "\/katalog\/0003-caddy-second-hdd--9.5mm\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 40.000",
+        "gambar": "\/katalog\/0003-caddy-second-hdd--9.5mm\/132dd72b-80c4-4fd6-b738-0a6a6a8ec7f6.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_15d944bd712582a2.webp"
+    },
+    
+    {
+        "judul": "\"Cartridge Canon CL-811 Color Original\"",
+        "link": "\/katalog\/0101-catridge-canon-811-color\/",
+        "kategori": "tinta",
+        "harga": "Rp 245.000",
+        "gambar": "\/katalog\/0101-catridge-canon-811-color\/15650f6a-c6fa-416c-9a44-c161b5e9bd0b.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_afddeae673af3be6.webp"
+    },
+    
+    {
+        "judul": "\"Cartridge Canon PG-810 Black Original\"",
+        "link": "\/katalog\/0100-catridge-canon-810-black\/",
+        "kategori": "tinta",
+        "harga": "Rp 195.000",
+        "gambar": "\/katalog\/0100-catridge-canon-810-black\/1295624_788ed64b-325b-43b2-af8e-a1f4322975ec_554_554.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_91f12400aac9d29c.webp"
+    },
+    
+    {
+        "judul": "\"Combo Keyboard \\u0026 Mouse Eyota K55\"",
+        "link": "\/katalog\/0029-keyboard-mouse-eyota-k55\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 70.000",
+        "gambar": "\/katalog\/0029-keyboard-mouse-eyota-k55\/49840f9b-e9ae-4229-9eaf-1e21990ad63d.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_2f243a69ff66f659.webp"
+    },
+    
+    {
+        "judul": "\"Combo Keyboard \\u0026 Mouse M-Tech STK-05\"",
+        "link": "\/katalog\/0133-keyboard-mouse-m-tech-stk-05\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 75.000",
+        "gambar": "\/katalog\/0133-keyboard-mouse-m-tech-stk-05\/40708806_6b6e6769-5973-40cf-9831-bbb6103c516a_2048_2048~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_7c29a7c5a682e45e.webp"
+    },
+    
+    {
+        "judul": "\"Combo Wireless Keyboard \\u0026 Mouse Mikuso KB-C013 Pro\"",
+        "link": "\/katalog\/0221-mikuso-kb-c013-pro-wireless\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 150.000",
+        "gambar": "\/katalog\/0221-mikuso-kb-c013-pro-wireless\/de5f2661155543ed943bcb5289019631~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_8ceb9f613278d79d.webp"
+    },
+    
+    {
+        "judul": "\"Converter HDMI to VGA Adapter + Audio Jack\"",
+        "link": "\/katalog\/0103-hdmi-to-vga-adapter-audio\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 25.000",
+        "gambar": "\/katalog\/0103-hdmi-to-vga-adapter-audio\/b91a84cb-0b48-4437-bd9f-d1dbe43f0cdd.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_8f212dbcdde780ff.webp"
+    },
+    
+    {
+        "judul": "\"Converter HDMI to VGA Adapter non Audio\"",
+        "link": "\/katalog\/0005-converter-hdmi-to-vga-adapter-non-audio\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 25.000",
+        "gambar": "\/katalog\/0005-converter-hdmi-to-vga-adapter-non-audio\/af1678a5f5034570b82f000fa4fd21c6~tplv-o3syd03w52-resize-jpeg_1600_1600_hu_764a07a0ce491baa.webp"
+    },
+    
+    {
+        "judul": "\"Converter HDMI to VGA NYK High Quality\"",
+        "link": "\/katalog\/0166-hdmi-to-vga-nyk\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 35.000",
+        "gambar": "\/katalog\/0166-hdmi-to-vga-nyk\/1ca6fc2e2fca4de09a5bcbfcade0bbbb~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_8d75b52b0c6e53af.webp"
+    },
+    
+    {
+        "judul": "\"Converter VGA to HDMI Mini with Audio\"",
+        "link": "\/katalog\/0212-vga-to-hdmi-converter-mini\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 50.000",
+        "gambar": "\/katalog\/0212-vga-to-hdmi-converter-mini\/756cbba9-6619-4657-a6ea-cc3f2667c442.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_ebcbea2dd60c96e8.webp"
+    },
+    
+    {
+        "judul": "\"Enclosure HDD 2.5 inch USB 2.0\"",
+        "link": "\/katalog\/0007-enclosure-hdd-2.5-usb-2.0\/",
+        "kategori": "penyimpanan",
+        "harga": "Rp 50.000",
+        "gambar": "\/katalog\/0007-enclosure-hdd-2.5-usb-2.0\/3ff02d2f-1979-4896-8c5e-4dfbad41e04f.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_4c0b5a109658239.webp"
+    },
+    
+    {
+        "judul": "\"Enclosure Standar 2.5 inch USB 3.0\"",
+        "link": "\/katalog\/0008-enclosure-standar-2.5-usb-3.0\/",
+        "kategori": "penyimpanan",
+        "harga": "Rp 70.000",
+        "gambar": "\/katalog\/0008-enclosure-standar-2.5-usb-3.0\/20f47196-b068-43f6-893c-eac5011ba5bb.jpg~tplv-aphluv4xwc-resize-jpeg_700_0_hu_e6fc10156f8cce6.webp"
+    },
+    
+    {
+        "judul": "\"Fan Case Gaming RGB 12cm - White Edition\"",
+        "link": "\/katalog\/0229-fan-case-gaming-rgb-white\/",
+        "kategori": "komponen",
+        "harga": "Rp 50.000",
+        "gambar": "\/katalog\/0229-fan-case-gaming-rgb-white\/66d2c2f6-4496-4269-b50a-a745735c33e3.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_1427bcea51c1e22b.webp"
+    },
+    
+    {
+        "judul": "\"Fan Case Gaming RGB Black\"",
+        "link": "\/katalog\/0009-fan-case-gaming-rgb-black\/",
+        "kategori": "komponen",
+        "harga": "Rp 50.000",
+        "gambar": "\/katalog\/0009-fan-case-gaming-rgb-black\/98a0dd57-b98b-42ee-95c0-213c8dd2b268.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_cfe5b21a07ae02b3.webp"
+    },
+    
+    {
+        "judul": "\"Fan Case NYK Nemesis AURA RGB 12cm\"",
+        "link": "\/katalog\/0192-fan-case-nyk-nemesis-aura-rgb\/",
+        "kategori": "komponen",
+        "harga": "Rp 60.000",
+        "gambar": "\/katalog\/0192-fan-case-nyk-nemesis-aura-rgb\/c2b0871d-f37b-4c46-becf-ced86ee74d98.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_a58e24fb04ed2cb5.webp"
+    },
+    
+    {
+        "judul": "\"Fan Casing Standar Hitam 12 Cm\"",
+        "link": "\/katalog\/0010-fan-casing-standar-hitam-12-cm\/",
+        "kategori": "komponen",
+        "harga": "Rp 30.000",
+        "gambar": "\/katalog\/0010-fan-casing-standar-hitam-12-cm\/4936c05d-43ba-4c0b-9fe8-8b3af9279b8f.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_ef745790dde7d0e3.webp"
+    },
+    
+    {
+        "judul": "\"Fan Processor Standard Intel LGA\"",
+        "link": "\/katalog\/0011-fan-processor-standard\/",
+        "kategori": "komponen",
+        "harga": "Rp 50.000",
+        "gambar": "\/katalog\/0011-fan-processor-standard\/f21d6c72-a6c6-4d34-846b-2fcc99c291ef.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_5bafa6005e1e6818.webp"
+    },
+    
+    {
+        "judul": "\"Fan Prosesor Eyota Q50 Universal Cooler\"",
+        "link": "\/katalog\/0095-fan-prosesor-eyota-q50\/",
+        "kategori": "komponen",
+        "harga": "Rp 60.000",
+        "gambar": "\/katalog\/0095-fan-prosesor-eyota-q50\/35126472_57247459-c260-4746-b503-b089d7eb4e4f_2048_2048.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_1bc7276ee4103f74.webp"
+    },
+    
+    {
+        "judul": "\"Fan Prosesor LGA 775 Model Baut\"",
+        "link": "\/katalog\/0012-fan-prosesor-lga-775-baut\/",
+        "kategori": "komponen",
+        "harga": "Rp 62.000",
+        "gambar": "\/katalog\/0012-fan-prosesor-lga-775-baut\/cd81d427-6442-4f45-968c-979a26db80e9.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_3aa4419663943597.webp"
+    },
+    
+    {
+        "judul": "\"FlashDisk 16GB V-GeN AVATAR Original\"",
+        "link": "\/katalog\/0014-flashdisk-16gb-v-gen-avatar-original\/",
+        "kategori": "penyimpanan",
+        "harga": "Rp 50.000",
+        "gambar": "\/katalog\/0014-flashdisk-16gb-v-gen-avatar-original\/90271d54-9e45-42b3-b994-0c6a9c705d7d.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_20a31df805edd7ce.webp"
+    },
+    
+    {
+        "judul": "\"Flashdisk Lexar 64GB (V100 USB 3.0 / S60 USB 2.0)\"",
+        "link": "\/katalog\/0186-lexar-v100-64gb-usb-3.0\/",
+        "kategori": "penyimpanan",
+        "harga": "Rp 85.000 - Rp 95.000",
+        "gambar": "\/katalog\/0186-lexar-v100-64gb-usb-3.0\/69e5cf03-3231-4c27-85da-d17ecb1560ba.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_c231fb4e4b45e384.webp"
+    },
+    
+    {
+        "judul": "\"Flashdisk Lexar 64GB (V100 USB 3.0 / S60 USB 2.0)\"",
+        "link": "\/katalog\/0187-lexar-s60-64gb-usb-2.0\/",
+        "kategori": "penyimpanan",
+        "harga": "Rp 85.000 - Rp 95.000",
+        "gambar": "\/katalog\/0187-lexar-s60-64gb-usb-2.0\/1e9542ae41824d99aec63ec34427c79b~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_aa727bcb3b5bcf1c.webp"
+    },
+    
+    {
+        "judul": "\"Flashdisk Lexar JumpDrive S60 32GB\"",
+        "link": "\/katalog\/0138-lexar-s60-32gb\/",
+        "kategori": "penyimpanan",
+        "harga": "Rp 75.000",
+        "gambar": "\/katalog\/0138-lexar-s60-32gb\/2cd28b45-c681-44d8-b2da-299df4613b8c.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_6708f7b7153ed3f9.webp"
+    },
+    
+    {
+        "judul": "\"Flashdisk Lexar JumpDrive S80 32GB USB 3.2\"",
+        "link": "\/katalog\/0165-lexar-s80-32gb-usb-3.2\/",
+        "kategori": "penyimpanan",
+        "harga": "Rp 85.000",
+        "gambar": "\/katalog\/0165-lexar-s80-32gb-usb-3.2\/3707c499-0f11-4fc2-9fe4-8fabd2cab34f.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_5c1803cca42bc69b.webp"
+    },
+    
+    {
+        "judul": "\"Flashdisk Lexar JumpDrive V40 16GB USB 2.0\"",
+        "link": "\/katalog\/0137-lexar-v40-16gb\/",
+        "kategori": "penyimpanan",
+        "harga": "Rp 60.000",
+        "gambar": "\/katalog\/0137-lexar-v40-16gb\/bca30e3e5c2d4f708f168d1ad7043dd0~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_ab410c30e4a8ddd4.webp"
+    },
+    
+    {
+        "judul": "\"Flashdisk Lexar JumpDrive V40 8GB\"",
+        "link": "\/katalog\/0162-lexar-v40-8gb\/",
+        "kategori": "penyimpanan",
+        "harga": "Rp 50.000",
+        "gambar": "\/katalog\/0162-lexar-v40-8gb\/7994e3e8-3879-4e49-a759-141667bba81b.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_285e83ae346114ff.webp"
+    },
+    
+    {
+        "judul": "\"Flashdisk OLIKE OFP204 Series USB 2.0\"",
+        "link": "\/katalog\/0222-olike-ofp204-flashdisk\/",
+        "kategori": "penyimpanan",
+        "harga": "Rp 55.000",
+        "gambar": "\/katalog\/0222-olike-ofp204-flashdisk\/478fc6a5b7d748bba7cf82faa181ccda~tplv-aphluv4xwc-resize-jpeg_600_0_hu_3f2f670539608774.webp"
+    },
+    
+    {
+        "judul": "\"Flashdisk OLIKE OFP208 Series USB 2.0\"",
+        "link": "\/katalog\/0223-olike-ofp208-flashdisk\/",
+        "kategori": "penyimpanan",
+        "harga": "Rp 70.000",
+        "gambar": "\/katalog\/0223-olike-ofp208-flashdisk\/a577f9c3-668d-47d6-9dbd-b88d04be95d7.jpg~tplv-aphluv4xwc-resize-jpeg_600_0_hu_339f67ff86dd19e0.webp"
+    },
+    
+    {
+        "judul": "\"Flashdisk OLIKE OFP216 Series USB 2.0\"",
+        "link": "\/katalog\/0224-olike-ofp216-flashdisk\/",
+        "kategori": "penyimpanan",
+        "harga": "80.000",
+        "gambar": "\/katalog\/0224-olike-ofp216-flashdisk\/5e2b7be91fc241c397020a50e663b84c~tplv-aphluv4xwc-resize-jpeg_600_0_hu_7afbe4510e2ca603.webp"
+    },
+    
+    {
+        "judul": "\"Flashdisk OLIKE OFP232 Series USB 2.0\"",
+        "link": "\/katalog\/0225-olike-ofp232-flashdisk\/",
+        "kategori": "penyimpanan",
+        "harga": "Rp 90.000",
+        "gambar": "\/katalog\/0225-olike-ofp232-flashdisk\/39aca6d8549f49c88b91629dceff721c~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_58d5bde0bde1bcd3.webp"
+    },
+    
+    {
+        "judul": "\"Flashdisk OLIKE OFP264 Series USB 2.0\"",
+        "link": "\/katalog\/0226-olike-ofp264-flashdisk\/",
+        "kategori": "penyimpanan",
+        "harga": "Rp 110.000",
+        "gambar": "\/katalog\/0226-olike-ofp264-flashdisk\/ef96bee3-7f4e-4f78-af36-d8ff8d8ebe95.jpg_hu_253b341fb4695d76.webp"
+    },
+    
+    {
+        "judul": "\"Flashdisk SanDisk Cruzer Blade 32GB (Compact Design)\"",
+        "link": "\/katalog\/0099-sandisk-32gb-cruzer-blade\/",
+        "kategori": "penyimpanan",
+        "harga": "Rp 70.000",
+        "gambar": "\/katalog\/0099-sandisk-32gb-cruzer-blade\/3c9406e0-051e-43d8-84a7-0a39d771d0f2.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_8605b010105bdc88.webp"
+    },
+    
+    {
+        "judul": "\"Flashdisk SanDisk Cruzer Blade 32GB Original\"",
+        "link": "\/katalog\/0013-flasdisk-sandisk-blade-32gb-original\/",
+        "kategori": "penyimpanan",
+        "harga": "Rp 80.000",
+        "gambar": "\/katalog\/0013-flasdisk-sandisk-blade-32gb-original\/9ff6648d-54a6-42ac-8b27-ce92009402f8.jpg~tplv-aphluv4xwc-resize-jpeg_700_0_hu_610eae877e2de78c.webp"
+    },
+    
+    {
+        "judul": "\"Gender Changer VGA Female to Female (Sambungan VGA)\"",
+        "link": "\/katalog\/0218-gender-vga-f-to-f\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 15.000",
+        "gambar": "\/katalog\/0218-gender-vga-f-to-f\/gndr_hu_8616f0b2f3ed4254.webp"
+    },
+    
+    {
+        "judul": "\"HDD Seagate Barracuda 3.5 inch 500GB\"",
+        "link": "\/katalog\/0016-hdd-seagate-3.5-500gb\/",
+        "kategori": "penyimpanan",
+        "harga": "Rp 150.000",
+        "gambar": "\/katalog\/0016-hdd-seagate-3.5-500gb\/16058958-1da9-4ba2-a08c-078fe7c0d3ac.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_7ac31fbb01e68a75.webp"
+    },
+    
+    {
+        "judul": "\"HDD Seagate Video 2.5 inch 500GB\"",
+        "link": "\/katalog\/0015-hdd-seagate-2.5-500gb\/",
+        "kategori": "penyimpanan",
+        "harga": "Rp 250.000",
+        "gambar": "\/katalog\/0015-hdd-seagate-2.5-500gb\/ebcda5aa-b23d-45f9-81bd-7f4fb511b76c.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_13d0f1c7da6e650c.webp"
+    },
+    
+    {
+        "judul": "\"HDMI Dongle AnyCast Wireless Display\"",
+        "link": "\/katalog\/0097-hdmi-dongle-anycast\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 100.000",
+        "gambar": "\/katalog\/0097-hdmi-dongle-anycast\/99f480a1-0c69-4542-b030-af54ada88d04.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_772e89613a2d9d93.webp"
+    },
+    
+    {
+        "judul": "\"HDMI Splitter 1-in 4-out (Full HD 1080P)\"",
+        "link": "\/katalog\/0119-splitter-hdmi-4port\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 85.000",
+        "gambar": "\/katalog\/0119-splitter-hdmi-4port\/00def667-8eff-4ff9-a54e-073fdee035f5.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_a8c853bfb4101302.webp"
+    },
+    
+    {
+        "judul": "\"HDMI Splitter 1-in 4-out dengan Adaptor Power\"",
+        "link": "\/katalog\/0140-hdmi-splitter-1-to-4-port\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 85.000",
+        "gambar": "\/katalog\/0140-hdmi-splitter-1-to-4-port\/251cd858-2a61-4597-805e-c0f8de9ec793.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_7b9452101a7b064d.webp"
+    },
+    
+    {
+        "judul": "\"Headset Multimedia M-Tech A4 with Mic\"",
+        "link": "\/katalog\/0164-mtech-a4-headphone\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 85.000",
+        "gambar": "\/katalog\/0164-mtech-a4-headphone\/50af1292-9b98-41ae-bfac-330b965a7596.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_f592f398941c1ad8.webp"
+    },
+    
+    {
+        "judul": "\"Intel Core i3-2120 Processor (3M Cache, 3.30 GHz)\"",
+        "link": "\/katalog\/0041-prosesor-core-i3-2120\/",
+        "kategori": "komponen",
+        "harga": "Rp 170.000",
+        "gambar": "\/katalog\/0041-prosesor-core-i3-2120\/9126088_ad309e6d-6c1c-4163-ad1e-fc50b3e85b27_351_340.png~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_9b082cf338722cdd.webp"
+    },
+    
+    {
+        "judul": "\"Joystick USB Double M-Tech\"",
+        "link": "\/katalog\/0017-joystick-usb-double-mtech\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 100.000",
+        "gambar": "\/katalog\/0017-joystick-usb-double-mtech\/50af44d0-4b46-4a79-aeda-50e8c9b6128e.jpg~tplv-aphluv4xwc-resize-jpeg_700_0_hu_7d85e0620d3fc492.webp"
+    },
+    
+    {
+        "judul": "\"Joystick USB Single Analog\"",
+        "link": "\/katalog\/0018-joystick-usb-singgle\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 60.000",
+        "gambar": "\/katalog\/0018-joystick-usb-singgle\/bb068b8d671b42a78df4d05aa81cfcae~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_38551695312dc521.webp"
+    },
+    
+    {
+        "judul": "\"Kabel Data HDD Eksternal USB 3.0 (Type A to Micro-B)\"",
+        "link": "\/katalog\/0146-kabel-enclosure-usb-3.0\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 20.000",
+        "gambar": "\/katalog\/0146-kabel-enclosure-usb-3.0\/6a61b792-f0ee-49a2-ac27-a72eea48e9eb.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_39955032bd91b82b.webp"
+    },
+    
+    {
+        "judul": "\"Kabel Data Printer Mikuso USB 2.0 (1.5M)\"",
+        "link": "\/katalog\/0025-mikuso-data-printer-1.5-meter\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 25.000",
+        "gambar": "\/katalog\/0025-mikuso-data-printer-1.5-meter\/9a9c9e41e0db4e3e8f98a49f2cff5d2f~tplv-o3syd03w52-resize-jpeg_1600_1600_hu_e9cadf7a08ac108d.webp"
+    },
+    
+    {
+        "judul": "\"Kabel Data Printer Mikuso USB 2.0 (Long Cable)\"",
+        "link": "\/katalog\/0074-mikuso-data-printer-5m\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 35.000 - Rp 48.000",
+        "gambar": "\/katalog\/0074-mikuso-data-printer-5m\/c93bedc1a7c34b25b29db142a5e03704~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_13d3d827c7aae31d.webp"
+    },
+    
+    {
+        "judul": "\"Kabel Data Printer Mikuso USB 2.0 (Long Cable)\"",
+        "link": "\/katalog\/0075-mikuso-data-printer-3m\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 35.000 - Rp 48.000",
+        "gambar": "\/katalog\/0075-mikuso-data-printer-3m\/8488044_985c9184-5370-47de-ab29-fdd733c0c8d5_1000_1000.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_52d0dfd84942f9ef.webp"
+    },
+    
+    {
+        "judul": "\"Kabel Data Printer USB 2.0 Standar (1.5M)\"",
+        "link": "\/katalog\/0154-kabel-usb-printer\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 20.000",
+        "gambar": "\/katalog\/0154-kabel-usb-printer\/f7e7f95e467e4c2386d59dc2c0f4014a~tplv-o3syd03w52-resize-jpeg_1600_1600_hu_5c1bb3ae91bf045.webp"
+    },
+    
+    {
+        "judul": "\"Kabel Data SATA III (Merah)\"",
+        "link": "\/katalog\/0026-kabel-sata-merah\/",
+        "kategori": "komponen",
+        "harga": "Rp 15.000",
+        "gambar": "\/katalog\/0026-kabel-sata-merah\/169a4339-3409-4700-89d2-a3131565196f.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_2ef2442f2078bcba.webp"
+    },
+    
+    {
+        "judul": "\"Kabel Data USB to Mini USB 5-Pin\"",
+        "link": "\/katalog\/0230-kabel-data-kamera-usb-to-5p\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 25.000",
+        "gambar": "\/katalog\/0230-kabel-data-kamera-usb-to-5p\/5c574048-367a-4c1b-9a42-558ff9b2edc5.jpg~tplv-aphluv4xwc-resize-jpeg_700_0_hu_cbdfed1c9fe91c98.webp"
+    },
+    
+    {
+        "judul": "\"Kabel HDMI 1.5 Meter M-Tech High Speed\"",
+        "link": "\/katalog\/0019-kabel-hdmi-1.5-meter-mtech\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 25.000",
+        "gambar": "\/katalog\/0019-kabel-hdmi-1.5-meter-mtech\/c36747a2-3615-44d3-89bb-d8a6cefcd671.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_c3babb59d86ab8e6.webp"
+    },
+    
+    {
+        "judul": "\"Kabel HDMI Male to Male 5 Meter\"",
+        "link": "\/katalog\/0124-kabel-hdmi-5m\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 45.000",
+        "gambar": "\/katalog\/0124-kabel-hdmi-5m\/d5c80835-464b-4787-b97e-72610d2d774b.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_62cf4390631298ee.webp"
+    },
+    
+    {
+        "judul": "\"Kabel HDMI Male to Male M-Tech 5 Meter\"",
+        "link": "\/katalog\/0181-kabel-hdmi-5m-m-tech\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 45.000",
+        "gambar": "\/katalog\/0181-kabel-hdmi-5m-m-tech\/cf6923a1-20cd-42ff-9767-00ef8f49ef53.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_155f2c85b5b975d1.webp"
+    },
+    
+    {
+        "judul": "\"Kabel Konverter Molex to Power SATA\"",
+        "link": "\/katalog\/0024-molex-to-power-sata\/",
+        "kategori": "komponen",
+        "harga": "Rp 15.000",
+        "gambar": "\/katalog\/0024-molex-to-power-sata\/f858a155-3b5b-40cd-93b6-d2ac2f77eace.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_909fe7bd03207f6.webp"
+    },
+    
+    {
+        "judul": "\"Kabel LAN \\u0026 Konektor RJ45 (Eceran Satuan)\"",
+        "link": "\/katalog\/0219-kabel-lan-ecer-satuan-meter\/",
+        "kategori": "networking",
+        "harga": "Rp 1.000 - Rp 4.000",
+        "gambar": "\/katalog\/0219-kabel-lan-ecer-satuan-meter\/157287217401179_26ab2dd5-2226-4ff7-80e6-c0398c39963f.png~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_6a6f80dd6494fe3d.webp"
+    },
+    
+    {
+        "judul": "\"Kabel LAN \\u0026 Konektor RJ45 (Eceran Satuan)\"",
+        "link": "\/katalog\/0220-konektor-rj45-ecer-satuan\/",
+        "kategori": "networking",
+        "harga": "Rp 1.000 - Rp 4.000",
+        "gambar": "\/katalog\/0220-konektor-rj45-ecer-satuan\/b6a12e02-c014-4d45-ad3a-22c5d8f87055.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_e7de59555a2c3a0.webp"
+    },
+    
+    {
+        "judul": "\"Kabel LAN RJ45 Cat5e Pabrikan (333 Series)\"",
+        "link": "\/katalog\/0084-kabel-lan-333-3meter\/",
+        "kategori": "networking",
+        "harga": "Rp 12.000 - Rp 25.000",
+        "gambar": "\/katalog\/0084-kabel-lan-333-3meter\/d5d0c1f8-3401-4b18-98cd-b5eb16de0cd5.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_613a32cf2fc567d0.webp"
+    },
+    
+    {
+        "judul": "\"Kabel LAN RJ45 Cat5e Pabrikan (333 Series)\"",
+        "link": "\/katalog\/0085-kabel-lan-333-10meter\/",
+        "kategori": "networking",
+        "harga": "Rp 12.000 - Rp 25.000",
+        "gambar": "\/katalog\/0085-kabel-lan-333-10meter\/9802508_ce16efef-c4b2-452b-a017-5877a1fc6457_600_600.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_f518987a3e0215b9.webp"
+    },
+    
+    {
+        "judul": "\"Kabel Perpanjangan USB Extension NYK 1.5 Meter\"",
+        "link": "\/katalog\/0182-nyk-usb-extension-1.5m\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 25.000",
+        "gambar": "\/katalog\/0182-nyk-usb-extension-1.5m\/599b4242-cee3-4bae-9e8c-08b267a6f2ab.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_cca4c5339fec4c20.webp"
+    },
+    
+    {
+        "judul": "\"Kabel Power Adaptor Laptop (Lubang 2)\"",
+        "link": "\/katalog\/0021-kabel-power-adaptor-laptop-standar\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 20.000",
+        "gambar": "\/katalog\/0021-kabel-power-adaptor-laptop-standar\/48926bf9-aa61-48ac-beb9-8f2d930663cc.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_7b879b203f023555.webp"
+    },
+    
+    {
+        "judul": "\"Kabel Power Adaptor Laptop (Lubang 3)\"",
+        "link": "\/katalog\/0020-kabel-power-adaptor-powergo---datafast\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 20.000",
+        "gambar": "\/katalog\/0020-kabel-power-adaptor-powergo---datafast\/494ffe32-d5ef-4310-b820-3d5d63cb0721.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_b83f92ce30b9c774.webp"
+    },
+    
+    {
+        "judul": "\"Kabel Power NYK High Quality (PC / Adaptor)\"",
+        "link": "\/katalog\/0172-kabel-power-nyk-pc\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 25.000",
+        "gambar": "\/katalog\/0172-kabel-power-nyk-pc\/6a9983ad-8a5a-4a4c-84fe-90993c72173e.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_80e9e8ed7f853b01.webp"
+    },
+    
+    {
+        "judul": "\"Kabel Power NYK High Quality (PC / Adaptor)\"",
+        "link": "\/katalog\/0173-kabel-power-nyk-adaptor\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 25.000",
+        "gambar": "\/katalog\/0173-kabel-power-nyk-adaptor\/4812297_2a7ae15d-624a-4dfe-b045-0058a5c4cfcc_700_700~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_233e36aa2a985e6b.webp"
+    },
+    
+    {
+        "judul": "\"Kabel Power PC / Monitor (Biasa)\"",
+        "link": "\/katalog\/0022-kabel-power-pc-psu-biasa\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 15.000",
+        "gambar": "\/katalog\/0022-kabel-power-pc-psu-biasa\/f7ae021d256b49f58bd18c3b94e2fc46~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_ec68b51f830a22f0.webp"
+    },
+    
+    {
+        "judul": "\"Kabel Power PC DataFast (High Quality)\"",
+        "link": "\/katalog\/0150-kabel-power-pc-datafast\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 20.000",
+        "gambar": "\/katalog\/0150-kabel-power-pc-datafast\/58663f82-ff1a-43ba-8e01-fd10752078e1.png~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_3b289ac35cb4b517.webp"
+    },
+    
+    {
+        "judul": "\"Kabel Power PC PSU (Medium Quality)\"",
+        "link": "\/katalog\/0113-kabel-power-pc-psu-medium\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 20.000",
+        "gambar": "\/katalog\/0113-kabel-power-pc-psu-medium\/a0bd6c7c-59d7-49fa-8ee8-f4c5a503131b.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_3f0a082389068b5e.webp"
+    },
+    
+    {
+        "judul": "\"Kabel Power Printer Profftech High Quality\"",
+        "link": "\/katalog\/0023-kabel-power-printer-profftech\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 20.000",
+        "gambar": "\/katalog\/0023-kabel-power-printer-profftech\/bf634f89-d285-4913-87e9-0e51c6ea4341.png~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_72bd4786206b0edc.webp"
+    },
+    
+    {
+        "judul": "\"Kabel Power Printer Standard (Lubang 2)\"",
+        "link": "\/katalog\/0148-kabel-power-printer-standart\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 15.000",
+        "gambar": "\/katalog\/0148-kabel-power-printer-standart\/17c90a2b-154a-4966-9d5f-634a2e57910b.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_14bf4a85c529afe7.webp"
+    },
+    
+    {
+        "judul": "\"Kabel Switch Power Button PC Desktop\"",
+        "link": "\/katalog\/0055-switch-power-button\/",
+        "kategori": "komponen",
+        "harga": "Rp 15.000",
+        "gambar": "\/katalog\/0055-switch-power-button\/f8281589-bfa3-4484-b7cf-7a540f89c6d5.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_4663bc9c7cc26745.webp"
+    },
+    
+    {
+        "judul": "\"Kabel USB Extension (Perpanjangan) 5 Meter\"",
+        "link": "\/katalog\/0145-usb-extension-5m\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 40.000",
+        "gambar": "\/katalog\/0145-usb-extension-5m\/137_96257251-1d2a-4be8-91f8-5a28bfe6120d.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_975a3fe9c2298bbf.webp"
+    },
+    
+    {
+        "judul": "\"Kabel USB Extension (Perpanjangan) Male to Female\"",
+        "link": "\/katalog\/0076-usb-extension-3m\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 25.000 - Rp 35.000",
+        "gambar": "\/katalog\/0076-usb-extension-3m\/b11c763f-9333-471e-8d71-5f63e713bd38.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_6abee802fa36b553.webp"
+    },
+    
+    {
+        "judul": "\"Kabel USB Extension (Perpanjangan) Male to Female\"",
+        "link": "\/katalog\/0077-usb-extension-1.5m\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 25.000 - Rp 35.000",
+        "gambar": "\/katalog\/0077-usb-extension-1.5m\/381831_26ab7be7-e245-4be3-ad2f-f7f75e682a55.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_80a5e14754725d5b.webp"
+    },
+    
+    {
+        "judul": "\"Kabel USB Male to Male NYK 70cm\"",
+        "link": "\/katalog\/0194-usb-male-to-male-nyk-70cm\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 25.000",
+        "gambar": "\/katalog\/0194-usb-male-to-male-nyk-70cm\/64663106-c454-4fe1-b0fe-8f2878ccd061.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_81fdb66c8de56a9a.webp"
+    },
+    
+    {
+        "judul": "\"Kabel VGA IndoBESTLINK 1.5 Meter\"",
+        "link": "\/katalog\/0175-kbl-vga-indobestlink-1.5m\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 25.000",
+        "gambar": "\/katalog\/0175-kbl-vga-indobestlink-1.5m\/96337bc7-0e91-41e4-9fda-ef62521ae674.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_c74b239fc8bb8950.webp"
+    },
+    
+    {
+        "judul": "\"Kabel VGA Male to Male 1.5 Meter\"",
+        "link": "\/katalog\/0027-kabel-vga-standar-1.5-meter\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 20.000",
+        "gambar": "\/katalog\/0027-kabel-vga-standar-1.5-meter\/96337bc7-0e91-41e4-9fda-ef62521ae674.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_c74b239fc8bb8950.webp"
+    },
+    
+    {
+        "judul": "\"Kabel VGA Male to Male M-Tech 1.5 Meter\"",
+        "link": "\/katalog\/0208-kabel-vga-1.5m-m-tech\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 25.000",
+        "gambar": "\/katalog\/0208-kabel-vga-1.5m-m-tech\/65684aff-83b8-432b-b944-c08fdcc672ad.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_26d4bfd74c22c363.webp"
+    },
+    
+    {
+        "judul": "\"Kabel VGA Male to Male M-Tech 5 Meter\"",
+        "link": "\/katalog\/0210-kabel-vga-5m-m-mtech\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 50.000",
+        "gambar": "\/katalog\/0210-kabel-vga-5m-m-mtech\/64238035_2d4e09fa-0c7d-4165-8de7-ce4118e2aaf2_1000_1000~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_fd3a9ffd251275b2.webp"
+    },
+    
+    {
+        "judul": "\"Kabel VGA Nisuta 5 Meter High Quality\"",
+        "link": "\/katalog\/0125-kabel-vga-nisuta-5m\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 55.000",
+        "gambar": "\/katalog\/0125-kabel-vga-nisuta-5m\/2694cbc8b41940e8811a714d65afb756~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_49e36980eff0ef4.webp"
+    },
+    
+    {
+        "judul": "\"Keyboard USB M-Tech STK-01 Standar\"",
+        "link": "\/katalog\/0132-keyboard-usb-m-tech-stk-01\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 60.000",
+        "gambar": "\/katalog\/0132-keyboard-usb-m-tech-stk-01\/331c620addaf4c51a5c949ce883985df~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_d4ae51be79c8b383.webp"
+    },
+    
+    {
+        "judul": "\"Keyboard USB Mikuso KB-039U Standar\"",
+        "link": "\/katalog\/0081-keyboard-kabel-mikuso-kb-039u\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 70.000",
+        "gambar": "\/katalog\/0081-keyboard-kabel-mikuso-kb-039u\/4f591fa9658c405a896fb44fb79b24a0~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_cfa30d0b555a7b18.webp"
+    },
+    
+    {
+        "judul": "\"Keyboard USB R-One R1601 Standar\"",
+        "link": "\/katalog\/0155-keyboard-r-one-r1601\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 60.000",
+        "gambar": "\/katalog\/0155-keyboard-r-one-r1601\/40adaf9f-fee7-4e87-b513-6178fd284245.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_59ec48c3b828bc3d.webp"
+    },
+    
+    {
+        "judul": "\"Keyboard USB Standar Eyota K11\"",
+        "link": "\/katalog\/0030-keyboard-standar-eyota-k11\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 55.000",
+        "gambar": "\/katalog\/0030-keyboard-standar-eyota-k11\/1df00a8f-bd61-4b9d-b434-3e0558009894.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_faaa13408b2a3d76.webp"
+    },
+    
+    {
+        "judul": "\"Keyboard USB Votre KB2308 Standar\"",
+        "link": "\/katalog\/0080-keyboard-kabel-votre-kb2308\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 55.000",
+        "gambar": "\/katalog\/0080-keyboard-kabel-votre-kb2308\/815081_457bf370-cb18-4f84-a3a6-92813c6923ee.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_27613deefe1dfbf9.webp"
+    },
+    
+    {
+        "judul": "\"Keyboard Wireless Mini i8 (MT-08)\"",
+        "link": "\/katalog\/0028-keyboard-mini-mt-08\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 70.000",
+        "gambar": "\/katalog\/0028-keyboard-mini-mt-08\/fec71fded22445edbe00e0218927a062~tplv-o3syd03w52-resize-jpeg_1600_1600_hu_f4a7a8627ed77bf4.webp"
+    },
+    
+    {
+        "judul": "\"Konektor RJ45 COMMSCOPE Cat5e (Isi 50)\"",
+        "link": "\/katalog\/0031-konektor-rj45-commscope-qty-50\/",
+        "kategori": "networking",
+        "harga": "Rp 45.000",
+        "gambar": "\/katalog\/0031-konektor-rj45-commscope-qty-50\/7bbf7aa2cb054718b0d20f29182db411~tplv-o3syd03w52-resize-jpeg_1600_1600_hu_25d286d7f4c9a816.webp"
+    },
+    
+    {
+        "judul": "\"Konektor RJ45 DF Cat5e (Pack)\"",
+        "link": "\/katalog\/0141-konektor-rj45-df-cat5-100pcs\/",
+        "kategori": "networking",
+        "harga": "Rp 35.000 - Rp 60.000",
+        "gambar": "\/katalog\/0141-konektor-rj45-df-cat5-100pcs\/8f8c8767-c798-4954-92a1-ae10bb596f89.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_e0373f80a8b386d2.webp"
+    },
+    
+    {
+        "judul": "\"Konektor RJ45 DF Cat5e (Pack)\"",
+        "link": "\/katalog\/0142-konektor-rj45-df-cat5-50pcs\/",
+        "kategori": "networking",
+        "harga": "Rp 35.000 - Rp 60.000",
+        "gambar": "\/katalog\/0142-konektor-rj45-df-cat5-50pcs\/a6f8247c-f4bb-4507-97e8-ee403def8592.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_d4a34c4e11fa78ff.webp"
+    },
+    
+    {
+        "judul": "\"Konektor RJ45 MEJECT Cat5e (Isi 100)\"",
+        "link": "\/katalog\/0032-konektor-rj45-meject-qty-100\/",
+        "kategori": "networking",
+        "harga": "Rp 70.000",
+        "gambar": "\/katalog\/0032-konektor-rj45-meject-qty-100\/a9d845bff04a4eb9bdd2059cc938b347~tplv-o3syd03w52-resize-jpeg_1600_1600_hu_b76f40352ffea324.webp"
+    },
+    
+    {
+        "judul": "\"Konverter DVI (24+1 to HDMI / 24+5 to VGA)\"",
+        "link": "\/katalog\/0215-dvi-24\u002b1-to-hdmi\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 25.000 - Rp 26.000",
+        "gambar": "\/katalog\/0215-dvi-24\u002b1-to-hdmi\/4476432_d8b68c6c-f94a-4e5a-a984-f6192610aa3e_700_700~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_fb213573354f915.webp"
+    },
+    
+    {
+        "judul": "\"Konverter DVI (24+1 to HDMI / 24+5 to VGA)\"",
+        "link": "\/katalog\/0216-dvi-24\u002b5-to-vga\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 25.000 - Rp 26.000",
+        "gambar": "\/katalog\/0216-dvi-24\u002b5-to-vga\/9147793_5cee8abe-00f7-48d7-9efe-7ff892ba701a_681_681.jpg~tplv-aphluv4xwc-resize-jpeg_700_0_hu_8deb52e9517927b5.webp"
+    },
+    
+    {
+        "judul": "\"Konverter Micro HDMI Male to HDMI Female\"",
+        "link": "\/katalog\/0153-micro-hdmi-to-hdmi\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 15.000",
+        "gambar": "\/katalog\/0153-micro-hdmi-to-hdmi\/4476432_51b34571-53a7-4edf-a7f2-a0f09d9b403b_620_420.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_babcdb97668d5bc3.webp"
+    },
+    
+    {
+        "judul": "\"Konverter NYK DisplayPort (DP) to HDMI\"",
+        "link": "\/katalog\/0198-konverter-nyk-dp-to-hdmi\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 45.000",
+        "gambar": "\/katalog\/0198-konverter-nyk-dp-to-hdmi\/3e7ef538-934a-450a-9748-3750051d86ee.jpg~tplv-aphluv4xwc-resize-jpeg_700_0_hu_1c5ca445e38f0f76.webp"
+    },
+    
+    {
+        "judul": "\"LAN Cable Tester M-Tech RJ45 \\u0026 RJ11\"",
+        "link": "\/katalog\/0079-lan-tester-mtech\/",
+        "kategori": "networking",
+        "harga": "Rp 50.000",
+        "gambar": "\/katalog\/0079-lan-tester-mtech\/d3f1ec8d-3f12-4156-8786-c6691c2a9f9a.png~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_ddf9dc6a9d6f1bc0.webp"
+    },
+    
+    {
+        "judul": "\"Laser Pointer Wireless Presenter PP1000\"",
+        "link": "\/katalog\/0144-laser-pointer-pp1000-wirelles\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 75.000",
+        "gambar": "\/katalog\/0144-laser-pointer-pp1000-wirelles\/736e769f-1979-450f-8fad-c327d3b93df0.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_71904b41e83c1ff7.webp"
+    },
+    
+    {
+        "judul": "\"Lexar JumpDrive D400 32GB Dual Drive USB 3.1\"",
+        "link": "\/katalog\/0163-lexar-d400-32gb\/",
+        "kategori": "penyimpanan",
+        "harga": "Rp 115.000",
+        "gambar": "\/katalog\/0163-lexar-d400-32gb\/5f10790800cb4f9ebc821e8065b740a4~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_e51165954baefcbf.webp"
+    },
+    
+    {
+        "judul": "\"M-Tech Bluetooth Audio Receiver USB\"",
+        "link": "\/katalog\/0211-m-tech-bluetooth-audio-receiver\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 25.000",
+        "gambar": "\/katalog\/0211-m-tech-bluetooth-audio-receiver\/0e8c5fa311bb4734a98177243871a283~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_53c666b1bef33fc2.webp"
+    },
+    
+    {
+        "judul": "\"MicroSDXC Netac 64GB Class 10 UHS-I\"",
+        "link": "\/katalog\/0136-microsd-64gb-netac-class-10\/",
+        "kategori": "penyimpanan",
+        "harga": "Rp 95.000",
+        "gambar": "\/katalog\/0136-microsd-64gb-netac-class-10\/1c4a8f90ef1f4c9d9e9563ff1364d7c8~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_a0e5e5bcff77d48d.webp"
+    },
+    
+    {
+        "judul": "\"Mifi 4G LTE H806 All Operator (Modem WiFi Portable)\"",
+        "link": "\/katalog\/0152-mifi-h806-all-operator\/",
+        "kategori": "networking",
+        "harga": "Rp 230.000",
+        "gambar": "\/katalog\/0152-mifi-h806-all-operator\/fe32a7fad6a3401dacb33e4a59fc22d6~tplv-aphluv4xwc-resize-jpeg_700_0_hu_8ce9fbefec1c58ee.webp"
+    },
+    
+    {
+        "judul": "\"Motherboard Varro Intel H61 / B75 LGA 1155\"",
+        "link": "\/katalog\/0033-motherboard-varro-h61-b75\/",
+        "kategori": "komponen",
+        "harga": "Rp 450.000",
+        "gambar": "\/katalog\/0033-motherboard-varro-h61-b75\/7df93693-27d5-4985-a0e8-4e93bd0b93a0.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_166bb991a6d968b4.webp"
+    },
+    
+    {
+        "judul": "\"Mouse Dual Mode Taffware Wireless 2.4G \\u0026 Bluetooth 5.0\"",
+        "link": "\/katalog\/0134-mouse-taffware-wirelles-dan-bt-5.0\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 40.000",
+        "gambar": "\/katalog\/0134-mouse-taffware-wirelles-dan-bt-5.0\/3a25f1b91f784c5897d069c9945bf9fe~tplv-o3syd03w52-resize-jpeg_700_0_hu_1246c3b2a27f73b7.webp"
+    },
+    
+    {
+        "judul": "\"Mouse Gaming Banda 6D P1 with LED RGB\"",
+        "link": "\/katalog\/0083-mouse-kabel-banda-6d-gaming-p1\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 45.000",
+        "gambar": "\/katalog\/0083-mouse-kabel-banda-6d-gaming-p1\/9b2b8a51a50d42b3bac590956d417251~tplv-o3syd03w52-resize-jpeg_1600_1600_hu_b7230d0255f1e591.webp"
+    },
+    
+    {
+        "judul": "\"Mouse Kabel AVAN AV-001 Optik\"",
+        "link": "\/katalog\/0034-mouse-kabel-avan-av-001\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 22.000",
+        "gambar": "\/katalog\/0034-mouse-kabel-avan-av-001\/82a08211-cddb-484b-8955-edd6b2ac24c1.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_ecb4d8223055078d.webp"
+    },
+    
+    {
+        "judul": "\"Mouse Kabel Lenovo M20 Mini Optical\"",
+        "link": "\/katalog\/0143-mouse-kabel-lenovo-m20\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 25.000",
+        "gambar": "\/katalog\/0143-mouse-kabel-lenovo-m20\/115bef93-1836-408e-86a3-aec0e68f9783.jpg~tplv-aphluv4xwc-resize-jpeg_700_0_hu_ead727255c2e3e06.webp"
+    },
+    
+    {
+        "judul": "\"Mouse Kabel Logitech M90 Optical Original\"",
+        "link": "\/katalog\/0228-logitech-m90\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 80.000",
+        "gambar": "\/katalog\/0228-logitech-m90\/7dde70aa-a501-4c5e-a61c-bc5e44c37f49.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_91b96ec9948206dd.webp"
+    },
+    
+    {
+        "judul": "\"Mouse Kabel M-Tech MT-129 Optik\"",
+        "link": "\/katalog\/0161-mouse-kabel-m-tech-mt-129\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 20.000",
+        "gambar": "\/katalog\/0161-mouse-kabel-m-tech-mt-129\/64238035_dff46818-68ca-4f04-a004-5f7293a04a34_1000_1000~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_2abc87e7346e4861.webp"
+    },
+    
+    {
+        "judul": "\"Mouse Kabel ROBOT M102 Original\"",
+        "link": "\/katalog\/0035-mouse-kabel-robot-m102\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 35.000",
+        "gambar": "\/katalog\/0035-mouse-kabel-robot-m102\/a458e4256faa458983b3f236d61bbacb~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_ec203c3268c66831.webp"
+    },
+    
+    {
+        "judul": "\"Mouse Kabel UBTech UB150 Optik\"",
+        "link": "\/katalog\/0082-mouse-kabel-ubtech-ub150\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 20.000",
+        "gambar": "\/katalog\/0082-mouse-kabel-ubtech-ub150\/5b986e3333096f824643c19fd0c499ee_hu_f81b1c21425445fd.webp"
+    },
+    
+    {
+        "judul": "\"Mouse Kabel Votre KM-309\"",
+        "link": "\/katalog\/0036-mouse-kabel-votre-km-309\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 22.000",
+        "gambar": "\/katalog\/0036-mouse-kabel-votre-km-309\/48a9e9227b6441d295127cd864167bfb~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_f644e85d3b16c241.webp"
+    },
+    
+    {
+        "judul": "\"Mouse Logitech Wireless M170 Original\"",
+        "link": "\/katalog\/0096-mouse-logitech-wireless-m170\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 160.000",
+        "gambar": "\/katalog\/0096-mouse-logitech-wireless-m170\/1967b9782502457d8000d68955ccbddd~tplv-o3syd03w52-resize-jpeg_1600_1600_hu_453d7575362ac9b1.webp"
+    },
+    
+    {
+        "judul": "\"Mouse OLIKE M102s (Kabel)\"",
+        "link": "\/katalog\/0176-mouse-kabel-olike-m102s\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 28.000",
+        "gambar": "\/katalog\/0176-mouse-kabel-olike-m102s\/74fd9c99-7f09-444f-aadb-5cf454bfd21c.png~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_eddc930f659e59ce.webp"
+    },
+    
+    {
+        "judul": "\"Mouse OLIKE M200 (Wireless)\"",
+        "link": "\/katalog\/0177-mouse-wirelles-olike-m200\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 63.000",
+        "gambar": "\/katalog\/0177-mouse-wirelles-olike-m200\/5536a5160a984cb3bb35d154bf3237ba~tplv-o3syd03w52-resize-jpeg_1600_1600_hu_4648bfd7708e7c71.webp"
+    },
+    
+    {
+        "judul": "\"Mouse Wireless DF256\"",
+        "link": "\/katalog\/0037-mouse-wireless-df256\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 50.000",
+        "gambar": "\/katalog\/0037-mouse-wireless-df256\/b530daa62c1b49beb96d8720a21e2bc5~.jpeg_hu_a0397d1e8b9fd268.webp"
+    },
+    
+    {
+        "judul": "\"Mouse Wireless DFW811 Optik\"",
+        "link": "\/katalog\/0120-mouse-wireless-dfw811\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 50.000",
+        "gambar": "\/katalog\/0120-mouse-wireless-dfw811\/3bb95eea-5f7c-4ecb-9c3d-40f5236b7cc1.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_46ce1286f70ea073.webp"
+    },
+    
+    {
+        "judul": "\"Mouse Wireless Eyota Hitam Optik\"",
+        "link": "\/katalog\/0038-mouse-wireless-eyota-hitam\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 50.000",
+        "gambar": "\/katalog\/0038-mouse-wireless-eyota-hitam\/7b1b30562e8e4d059121eafb426c76f4~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_9cf69245e8c205ab.webp"
+    },
+    
+    {
+        "judul": "\"Mouse Wireless M-Tech W70 Silent Click\"",
+        "link": "\/katalog\/0160-mouse-wirelles-m-tech-w70-silent\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 50.000",
+        "gambar": "\/katalog\/0160-mouse-wirelles-m-tech-w70-silent\/09dd909ce13148fd8d66a60e2df70d8b~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_a46fd9761829a1ee.webp"
+    },
+    
+    {
+        "judul": "\"Mousepad Karakter Desain Lucu \\u0026 Menarik\"",
+        "link": "\/katalog\/0171-mousepad-caracter\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 15.000",
+        "gambar": "\/katalog\/0171-mousepad-caracter\/86e7d62bdd0344618fb1711cd6c8bd43~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_d0d24706c7fd806a.webp"
+    },
+    
+    {
+        "judul": "\"Mousepad Olike MP2 Smooth Surface\"",
+        "link": "\/katalog\/0231-mousepad-olike-mp2\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 13.000",
+        "gambar": "\/katalog\/0231-mousepad-olike-mp2\/03dd8bb6-241c-4f8b-bd23-a0afa592789d.jpg~tplv-aphluv4xwc-resize-jpeg_700_0_hu_217f3f496fb6817a.webp"
+    },
+    
+    {
+        "judul": "\"Mousepad Olike MP2M Comfort Surface\"",
+        "link": "\/katalog\/0217-mousepad-olike-mp2m\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 18.000",
+        "gambar": "\/katalog\/0217-mousepad-olike-mp2m\/1c9e94ebd0a544de81ecd28139c44470~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_9534091adb97f3a6.webp"
+    },
+    
+    {
+        "judul": "\"Mousepad ROBOT RP01 Anti-Slip\"",
+        "link": "\/katalog\/0039-mousepad-robot-rp01\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 12.000",
+        "gambar": "\/katalog\/0039-mousepad-robot-rp01\/c8d6dc4c064441f0b19cff6dbee36ecb~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_14d8a33709e85a99.webp"
+    },
+    
+    {
+        "judul": "\"Power Supply Varro Cronos 500W\"",
+        "link": "\/katalog\/0042-psu-varro-cronos\/",
+        "kategori": "komponen",
+        "harga": "Rp 250.000",
+        "gambar": "\/katalog\/0042-psu-varro-cronos\/78b05567657547f9b08619d9a71e442c~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_cda638cd085ac597.webp"
+    },
+    
+    {
+        "judul": "\"RAM DDR3 4GB PC-12800 Longdimm\"",
+        "link": "\/katalog\/0043-ram-ddr3-4gb-longdimm-pc\/",
+        "kategori": "komponen",
+        "harga": "Rp 150.000",
+        "gambar": "\/katalog\/0043-ram-ddr3-4gb-longdimm-pc\/b484bf88-da75-4bfe-bf8a-8ff66a77b7e1.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_3981d1c51d9adbb7.webp"
+    },
+    
+    {
+        "judul": "\"RAM DDR3 4GB PC-12800 Sodimm\"",
+        "link": "\/katalog\/0044-ram-ddr3-4gb-sodimm-laptop\/",
+        "kategori": "komponen",
+        "harga": "Rp 200.000",
+        "gambar": "\/katalog\/0044-ram-ddr3-4gb-sodimm-laptop\/f0926d98-a030-4648-b988-71d31e3073ac.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_11871b93a234df3.webp"
+    },
+    
+    {
+        "judul": "\"RAM DDR3 8GB PC-12800 Longdimm\"",
+        "link": "\/katalog\/0045-ram-ddr3-8gb-longdimm-pc\/",
+        "kategori": "komponen",
+        "harga": "Rp 250.000",
+        "gambar": "\/katalog\/0045-ram-ddr3-8gb-longdimm-pc\/561ce7a6-f69c-46f7-bce3-513b20e9efec.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_77190bbcef601622.webp"
+    },
+    
+    {
+        "judul": "\"RAM DDR3 8GB PC-12800 Sodimm\"",
+        "link": "\/katalog\/0046-ram-ddr3-8gb-sodimm-laptop\/",
+        "kategori": "komponen",
+        "harga": "Rp 350.000",
+        "gambar": "\/katalog\/0046-ram-ddr3-8gb-sodimm-laptop\/abacf48e-e856-4c70-809e-a1282a111dcf.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_f4d45cc8e93bed67.webp"
+    },
+    
+    {
+        "judul": "\"RAM DDR3L 4GB PC-12800 (Low Voltage)\"",
+        "link": "\/katalog\/0047-ram-ddr3l-4gb-sodimm-laptop\/",
+        "kategori": "komponen",
+        "harga": "Rp 200.000",
+        "gambar": "\/katalog\/0047-ram-ddr3l-4gb-sodimm-laptop\/909dcfb5-98d8-416e-bc4a-afee4256b2b4.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_7e821f68ca0ff94f.webp"
+    },
+    
+    {
+        "judul": "\"RAM DDR3L 8GB PC-12800 (Low Voltage)\"",
+        "link": "\/katalog\/0048-ram-ddr3l-8gb-sodimm-laptop\/",
+        "kategori": "komponen",
+        "harga": "Rp 350.000",
+        "gambar": "\/katalog\/0048-ram-ddr3l-8gb-sodimm-laptop\/206147fc8e1d477287b6716176ccfcda~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_be175195d4e2b656.webp"
+    },
+    
+    {
+        "judul": "\"RAM DDR4 4GB PC-19200/21300 Longdimm\"",
+        "link": "\/katalog\/0127-ram-ddr4-4gb-logdimm\/",
+        "kategori": "komponen",
+        "harga": "Rp 250.000",
+        "gambar": "\/katalog\/0127-ram-ddr4-4gb-logdimm\/b5738b88-aa90-45ef-b337-c70c1eb9f753.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_bd625ceb39f5ad79.webp"
+    },
+    
+    {
+        "judul": "\"RAM DDR4 4GB PC-19200/21300 Sodimm Laptop\"",
+        "link": "\/katalog\/0129-ram-ddr4-4gb-sodimm\/",
+        "kategori": "komponen",
+        "harga": "Rp 250.000",
+        "gambar": "\/katalog\/0129-ram-ddr4-4gb-sodimm\/85c39a9a-45bf-4096-84b5-63394b516811.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_f7429847e7d16f35.webp"
+    },
+    
+    {
+        "judul": "\"RAM DDR4 8GB PC-21300/25600 Longdimm\"",
+        "link": "\/katalog\/0128-ram-ddr4-8gb-logdimm\/",
+        "kategori": "komponen",
+        "harga": "Rp 400.000",
+        "gambar": "\/katalog\/0128-ram-ddr4-8gb-logdimm\/30cc0e6f-c30a-4020-91e3-5701587ba998.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_c10863c60159f0f9.webp"
+    },
+    
+    {
+        "judul": "\"RAM DDR4 8GB PC-21300/25600 Sodimm Laptop\"",
+        "link": "\/katalog\/0130-ram-ddr4-8gb-sodimm\/",
+        "kategori": "komponen",
+        "harga": "Rp 400.000",
+        "gambar": "\/katalog\/0130-ram-ddr4-8gb-sodimm\/45c94b4d469e44918d2d1fe77f6de340~tplv-o3syd03w52-resize-jpeg_1600_1600_hu_5c15f85a939da848.webp"
+    },
+    
+    {
+        "judul": "\"Router Wireless Tenda N301 Fast Ethernet\"",
+        "link": "\/katalog\/0111-router-tenda-n301\/",
+        "kategori": "networking",
+        "harga": "Rp 170.000",
+        "gambar": "\/katalog\/0111-router-tenda-n301\/5e686756112a4a54a130594ce1cd6fa7~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_355b957cd59c6bc4.webp"
+    },
+    
+    {
+        "judul": "\"Sambungan HDMI Female to Female (Coupler)\"",
+        "link": "\/katalog\/0147-sambungan-hdmi-f-to-f\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 15.000",
+        "gambar": "\/katalog\/0147-sambungan-hdmi-f-to-f\/7bf7b68b-d8d7-422d-9fb5-f3af72798af8.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_5d24de2963e44d65.webp"
+    },
+    
+    {
+        "judul": "\"Speaker Advance Duo 050 USB 2.0\"",
+        "link": "\/katalog\/0050-speaker-advance-duo-050\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 80.000",
+        "gambar": "\/katalog\/0050-speaker-advance-duo-050\/0eb2e17f-5504-4a44-b74b-009b1fdac21b.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_fb6ca9132b6128b8.webp"
+    },
+    
+    {
+        "judul": "\"Speaker Gaming GAMEN GS2 RGB Stereo\"",
+        "link": "\/katalog\/0118-speaker-gamen-gs2\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 100.000",
+        "gambar": "\/katalog\/0118-speaker-gamen-gs2\/5076985992204865b57bcffb1daae5fb~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_f9dedcb3c4658fe4.webp"
+    },
+    
+    {
+        "judul": "\"Speaker Multimedia Advance CLS-101 RGB\"",
+        "link": "\/katalog\/0135-speaker-advance-cls-101\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 70.000",
+        "gambar": "\/katalog\/0135-speaker-advance-cls-101\/d27042db0a434450a3585c54c0bb2469~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_e75ec33cf4188e2e.webp"
+    },
+    
+    {
+        "judul": "\"Speaker Multimedia USB 2.0 101Z\"",
+        "link": "\/katalog\/0102-speaker-usb-2.0-101z\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 40.000",
+        "gambar": "\/katalog\/0102-speaker-usb-2.0-101z\/9a4a6773-3293-4fab-a2a5-da7a050bb7f3.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_b0150906523902fe.webp"
+    },
+    
+    {
+        "judul": "\"Speaker Multimedia USB 2.0 M-Tech A2 Stereo\"",
+        "link": "\/katalog\/0197-speaker-m-tech-a2\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 70.000",
+        "gambar": "\/katalog\/0197-speaker-m-tech-a2\/d486e521-91bc-4e58-9ce9-6078adb2dda8.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_665766c8848d04b4.webp"
+    },
+    
+    {
+        "judul": "\"Speaker Robot RS180 Gaming Stereo\"",
+        "link": "\/katalog\/0051-speaker-robot-rs180\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 75.000",
+        "gambar": "\/katalog\/0051-speaker-robot-rs180\/89f92000-1c25-4d05-8b95-e188f308da24.jpg_hu_806cee16685c96c3.webp"
+    },
+    
+    {
+        "judul": "\"SSD NVMe TeamGroup MP33 M.2 PCIe Gen3 x4\"",
+        "link": "\/katalog\/0183-teamgroup-mp33-256gb\/",
+        "kategori": "penyimpanan",
+        "harga": "Rp 500.000 - Rp 750.000",
+        "gambar": "\/katalog\/0183-teamgroup-mp33-256gb\/74de9435-4887-4278-b07f-be1635026519.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_f59870350572b013.webp"
+    },
+    
+    {
+        "judul": "\"SSD NVMe TeamGroup MP33 M.2 PCIe Gen3 x4\"",
+        "link": "\/katalog\/0184-teamgroup-mp33-512gb\/",
+        "kategori": "penyimpanan",
+        "harga": "Rp 500.000 - Rp 750.000",
+        "gambar": "\/katalog\/0184-teamgroup-mp33-512gb\/9eddecae-fca6-49f9-b263-a0d1fdbec341.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_4718c1cfc0ea106d.webp"
+    },
+    
+    {
+        "judul": "\"SSD SATA 2.5 Inch Ovation 128GB\"",
+        "link": "\/katalog\/0108-ssd-sata-ovation-128gb\/",
+        "kategori": "penyimpanan",
+        "harga": "Rp 350.000",
+        "gambar": "\/katalog\/0108-ssd-sata-ovation-128gb\/daef8c77-fd31-45dd-81d7-261b23c530e0.jpg~tplv-aphluv4xwc-resize-jpeg_600_0_hu_9369101c152c5ae5.webp"
+    },
+    
+    {
+        "judul": "\"SSD SATA 2.5 Inch Ovation 256GB\"",
+        "link": "\/katalog\/0087-ssd-sata-ovation-256gb\/",
+        "kategori": "penyimpanan",
+        "harga": "Rp 450.000",
+        "gambar": "\/katalog\/0087-ssd-sata-ovation-256gb\/d6803b2abd9d4e1c9ab1f5f3857cf236~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_2bc2fb7399c85f10.webp"
+    },
+    
+    {
+        "judul": "\"SSD SATA 2.5 Inch TechByte 256GB\"",
+        "link": "\/katalog\/0149-ssd-sata-techbyte-2546gb\/",
+        "kategori": "penyimpanan",
+        "harga": "Rp 450.000",
+        "gambar": "\/katalog\/0149-ssd-sata-techbyte-2546gb\/680288f8-43c7-4d16-b1ae-b82d6627d8f8.jpg~tplv-aphluv4xwc-resize-jpeg_700_0_hu_6fc2f59fce921737.webp"
+    },
+    
+    {
+        "judul": "\"SSD SATA Adata Ultimate SU650 512GB\"",
+        "link": "\/katalog\/0185-adata-su650-512gb\/",
+        "kategori": "penyimpanan",
+        "harga": "Rp 650.000",
+        "gambar": "\/katalog\/0185-adata-su650-512gb\/8ccbdecf-55f4-4997-b499-109eaed9a041.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_1dc2c193b61bc5ea.webp"
+    },
+    
+    {
+        "judul": "\"SSD SATA DST 128GB 2.5 Inch\"",
+        "link": "\/katalog\/0052-ssd-sata-dst-128gb\/",
+        "kategori": "penyimpanan",
+        "harga": "Rp 300.000",
+        "gambar": "\/katalog\/0052-ssd-sata-dst-128gb\/ba541d6688414163bf7b713589c4aa59~tplv-o3syd03w52-resize-jpeg_1600_1600_hu_fecf88a036b691b5.webp"
+    },
+    
+    {
+        "judul": "\"SSD SATA Fusion 2.5 Inch\"",
+        "link": "\/katalog\/0188-fusion-128gb\/",
+        "kategori": "penyimpanan",
+        "harga": "Rp 350.000 - Rp 450.000",
+        "gambar": "\/katalog\/0188-fusion-128gb\/9a735fd6-731d-421a-82cc-cc0bf28c0b91.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_644d6a0aad0c4626.webp"
+    },
+    
+    {
+        "judul": "\"SSD SATA Fusion 2.5 Inch\"",
+        "link": "\/katalog\/0189-fusion-256gb\/",
+        "kategori": "penyimpanan",
+        "harga": "Rp 350.000 - Rp 450.000",
+        "gambar": "\/katalog\/0189-fusion-256gb\/02406c2a-13c8-41db-8ad6-8d9e6ec83c22.jpg~tplv-aphluv4xwc-resize-jpeg_700_0_hu_39566e1534c0678f.webp"
+    },
+    
+    {
+        "judul": "\"SSD SATA TechByte 256GB\"",
+        "link": "\/katalog\/0053-ssd-sata-techbyte-256gb\/",
+        "kategori": "penyimpanan",
+        "harga": "Rp 450.000",
+        "gambar": "\/katalog\/0053-ssd-sata-techbyte-256gb\/32defbaf-21d5-4d92-b6e3-4e08ccc868c9.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_c07312c242f227a0.webp"
+    },
+    
+    {
+        "judul": "\"Sticker Keyboard Arabic + English\"",
+        "link": "\/katalog\/0054-sticker-keyboard-arabic\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 15.000",
+        "gambar": "\/katalog\/0054-sticker-keyboard-arabic\/23653686-8c9a-48cf-ad5d-ac435fb19b95.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_1d0211d6d8483b38.webp"
+    },
+    
+    {
+        "judul": "\"Switch USB Printer Manual 2-Port\"",
+        "link": "\/katalog\/0112-switch-usb-printer-2-port\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 85.000",
+        "gambar": "\/katalog\/0112-switch-usb-printer-2-port\/52995106_79b71c9b-bd51-4130-90b5-ebb1be68a428_2048_2048.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_7e016de9fee9e99f.webp"
+    },
+    
+    {
+        "judul": "\"Thermal Grease HT-GY260 High Performance\"",
+        "link": "\/katalog\/0098-thermal-grease-ht-gy260\/",
+        "kategori": "komponen",
+        "harga": "Rp 25.000",
+        "gambar": "\/katalog\/0098-thermal-grease-ht-gy260\/1354725_12a189b7-c74d-4661-b3bf-44e591d42d4c_2048_0.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_33f690b5a58bcd5d.webp"
+    },
+    
+    {
+        "judul": "\"Thermal Paste Processor HY510 (Model Suntik)\"",
+        "link": "\/katalog\/0056-thermal-pasta-grease-processor-suntik-hy510\/",
+        "kategori": "komponen",
+        "harga": "Rp 4.000",
+        "gambar": "\/katalog\/0056-thermal-pasta-grease-processor-suntik-hy510\/46ea82c8c35c467a8d416860226f0979~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_742e9588716dfd98.webp"
+    },
+    
+    {
+        "judul": "\"Tinta BluePrint 100ml Universal (Cyan/Yellow)\"",
+        "link": "\/katalog\/0089-tinta-blueprint-100ml-c\/",
+        "kategori": "tinta",
+        "harga": "Rp 40.000",
+        "gambar": "\/katalog\/0089-tinta-blueprint-100ml-c\/0cc64436-526c-43f8-9f29-be76ab6fee0c.png~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_cc8d9cc5ceccc000.webp"
+    },
+    
+    {
+        "judul": "\"Tinta BluePrint 100ml Universal (Cyan/Yellow)\"",
+        "link": "\/katalog\/0090-tinta-blueprint-100ml-y\/",
+        "kategori": "tinta",
+        "harga": "Rp 40.000",
+        "gambar": "\/katalog\/0090-tinta-blueprint-100ml-y\/5abbbbe5-57f2-4a2f-91f5-1d925f9de3e4.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_2f50ea597241f3f3.webp"
+    },
+    
+    {
+        "judul": "\"Tinta BluePrint 100ml Universal (Magenta/Black)\"",
+        "link": "\/katalog\/0091-tinta-blueprint-100ml-m\/",
+        "kategori": "tinta",
+        "harga": "Rp 40.000",
+        "gambar": "\/katalog\/0091-tinta-blueprint-100ml-m\/7073a3c2-4091-487a-84ee-61d645e2ff08.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_50bd67d574be8e2.webp"
+    },
+    
+    {
+        "judul": "\"Tinta BluePrint 100ml Universal (Magenta/Black)\"",
+        "link": "\/katalog\/0092-tinta-blueprint-100ml-k\/",
+        "kategori": "tinta",
+        "harga": "Rp 40.000",
+        "gambar": "\/katalog\/0092-tinta-blueprint-100ml-k\/12532329_d5904f1a-232c-4028-af93-2da969533179_768_768~tplv-aphluv4xwc-resize-jpeg_700_0_hu_50494db6150a8b87.webp"
+    },
+    
+    {
+        "judul": "\"Tinta BluePrint Reffil Kit (Suntik) 40ml\"",
+        "link": "\/katalog\/0093-tinta-blueprint-40ml-reffil-black\/",
+        "kategori": "tinta",
+        "harga": "Rp 40.000",
+        "gambar": "\/katalog\/0093-tinta-blueprint-40ml-reffil-black\/0253fcab36da40648aeccaab7805078a~tplv-o3syd03w52-resize-jpeg_1600_1600_hu_6c63bdaefbddd8d.webp"
+    },
+    
+    {
+        "judul": "\"Tinta BluePrint Reffil Kit (Suntik) 40ml\"",
+        "link": "\/katalog\/0094-tinta-blueprint-40ml-reffil-colour\/",
+        "kategori": "tinta",
+        "harga": "Rp 40.000",
+        "gambar": "\/katalog\/0094-tinta-blueprint-40ml-reffil-colour\/18609333_154d1831-1b9e-408b-b61f-0d1ad4990beb_1000_1000~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_9397d05176c6695d.webp"
+    },
+    
+    {
+        "judul": "\"Tinta Epson 003 Black Premium Ink (70ml)\"",
+        "link": "\/katalog\/0058-tinta-epson-003-black-premium\/",
+        "kategori": "tinta",
+        "harga": "Rp 40.000",
+        "gambar": "\/katalog\/0058-tinta-epson-003-black-premium\/a693fcbf-612b-46a2-8dff-004be2837212.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_a1f0109bae8e785e.webp"
+    },
+    
+    {
+        "judul": "\"Tinta Epson 003 Cyan Premium Ink (70ml)\"",
+        "link": "\/katalog\/0059-tinta-epson-003-cyan-premium\/",
+        "kategori": "tinta",
+        "harga": "Rp 40.000",
+        "gambar": "\/katalog\/0059-tinta-epson-003-cyan-premium\/925014fa-9965-4f54-8051-f17b32522dd0.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_8cc98c86e80bc98d.webp"
+    },
+    
+    {
+        "judul": "\"Tinta Epson 003 Magenta Premium Ink (70ml)\"",
+        "link": "\/katalog\/0060-tinta-epson-003-magenta--premium\/",
+        "kategori": "tinta",
+        "harga": "Rp 40.000",
+        "gambar": "\/katalog\/0060-tinta-epson-003-magenta--premium\/be2adcde-7f36-4907-b95f-a1e9e30412e9.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_42cc076bdc1b2e0c.webp"
+    },
+    
+    {
+        "judul": "\"Tinta Epson 003 Yellow Premium Ink (70ml)\"",
+        "link": "\/katalog\/0061-tinta-epson-003-yellow-premium\/",
+        "kategori": "tinta",
+        "harga": "Rp 40.000",
+        "gambar": "\/katalog\/0061-tinta-epson-003-yellow-premium\/9644cd00aa494e36a1294bcd46a01553~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_d0d6ddb1e09ea843.webp"
+    },
+    
+    {
+        "judul": "\"Tinta Epson 664 Black Premium (70ml)\"",
+        "link": "\/katalog\/0062-tinta-epson-664--black-premium\/",
+        "kategori": "tinta",
+        "harga": "Rp 38.000",
+        "gambar": "\/katalog\/0062-tinta-epson-664--black-premium\/2c59c3ac-548a-405f-8caa-c2683eaeeb6b.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_fab069f8933adc36.webp"
+    },
+    
+    {
+        "judul": "\"Tinta Epson 664 Color Premium (Cyan/Magenta/Yellow)\"",
+        "link": "\/katalog\/0063-tinta-epson-664--cyan-premium\/",
+        "kategori": "tinta",
+        "harga": "Rp 38.000",
+        "gambar": "\/katalog\/0063-tinta-epson-664--cyan-premium\/4fad37d5-9a26-4ab4-8fba-271856e3ae54.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_7774df0a531fb326.webp"
+    },
+    
+    {
+        "judul": "\"Tinta Epson 664 Color Premium (Cyan/Magenta/Yellow)\"",
+        "link": "\/katalog\/0064-tinta-epson-664--magenta-premium\/",
+        "kategori": "tinta",
+        "harga": "Rp 38.000",
+        "gambar": "\/katalog\/0064-tinta-epson-664--magenta-premium\/8beef190-1b94-4b71-9b40-3b645ab5ecdb.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_cee9ac2a5cd6aef.webp"
+    },
+    
+    {
+        "judul": "\"Tinta Epson 664 Color Premium (Cyan/Magenta/Yellow)\"",
+        "link": "\/katalog\/0065-tinta-epson-664--yellow-premium\/",
+        "kategori": "tinta",
+        "harga": "Rp 38.000",
+        "gambar": "\/katalog\/0065-tinta-epson-664--yellow-premium\/6587228_2433073b-8a68-45e1-aaac-19aa50b9d9e9.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_d9f1c33921e3603b.webp"
+    },
+    
+    {
+        "judul": "\"Tinta Original EPSON 003 (EcoTank)\"",
+        "link": "\/katalog\/0199-tinta-epson-003-c-original\/",
+        "kategori": "tinta",
+        "harga": "Rp 115.000",
+        "gambar": "\/katalog\/0199-tinta-epson-003-c-original\/23671101_fde4f8ef-6f98-4f55-8a2b-960db211a3d4_1500_1500.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_2e186883555326d0.webp"
+    },
+    
+    {
+        "judul": "\"Tinta Original EPSON 003 (EcoTank)\"",
+        "link": "\/katalog\/0200-tinta-epson-003-m-original\/",
+        "kategori": "tinta",
+        "harga": "Rp 115.000",
+        "gambar": "\/katalog\/0200-tinta-epson-003-m-original\/c85b98e5-00bc-4a78-9178-31acebd80970.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_6c2f4eef4952382.webp"
+    },
+    
+    {
+        "judul": "\"Tinta Original EPSON 003 (EcoTank)\"",
+        "link": "\/katalog\/0201-tinta-epson-003-y-original\/",
+        "kategori": "tinta",
+        "harga": "Rp 115.000",
+        "gambar": "\/katalog\/0201-tinta-epson-003-y-original\/56e201e4-d12f-4acf-a74a-bbd58a038d5e.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_5a6fc8c288e16cc1.webp"
+    },
+    
+    {
+        "judul": "\"Tinta Original EPSON 003 (EcoTank)\"",
+        "link": "\/katalog\/0202-tinta-epson-003-bk-original\/",
+        "kategori": "tinta",
+        "harga": "Rp 115.000",
+        "gambar": "\/katalog\/0202-tinta-epson-003-bk-original\/d51e547b-7f43-45f6-8b97-7da2f233cae0.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_fd9bf4d21aba92e9.webp"
+    },
+    
+    {
+        "judul": "\"Tinta Original EPSON 664 (L-Series)\"",
+        "link": "\/katalog\/0203-tinta-epson-664-c-original\/",
+        "kategori": "tinta",
+        "harga": "Rp 115.000",
+        "gambar": "\/katalog\/0203-tinta-epson-664-c-original\/e5f63bbb-7733-4b89-b18a-20e846640d42.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_ae482c84b0caa644.webp"
+    },
+    
+    {
+        "judul": "\"Tinta Original EPSON 664 (L-Series)\"",
+        "link": "\/katalog\/0204-tinta-epson-664-m-original\/",
+        "kategori": "tinta",
+        "harga": "Rp 115.000",
+        "gambar": "\/katalog\/0204-tinta-epson-664-m-original\/aeddd15243a34637b52fb89600b2f792~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_75c37c3c56daa63d.webp"
+    },
+    
+    {
+        "judul": "\"Tinta Original EPSON 664 (L-Series)\"",
+        "link": "\/katalog\/0205-tinta-epson-664-y-original\/",
+        "kategori": "tinta",
+        "harga": "Rp 115.000",
+        "gambar": "\/katalog\/0205-tinta-epson-664-y-original\/1ff0b4a3-4d93-411b-84a9-d753b254a2c7.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_1475ded6a9bce66d.webp"
+    },
+    
+    {
+        "judul": "\"Tinta Original EPSON 664 (L-Series)\"",
+        "link": "\/katalog\/0206-tinta-epson-664-bk-original\/",
+        "kategori": "tinta",
+        "harga": "Rp 115.000",
+        "gambar": "\/katalog\/0206-tinta-epson-664-bk-original\/ceaace9f-794a-4f48-acb1-3aaa3c4eaad0.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_b047c78e63a559f8.webp"
+    },
+    
+    {
+        "judul": "\"TP-LINK LS1005 LiteWave 5-Port Desktop Switch\"",
+        "link": "\/katalog\/0078-tp-link-tl-ls1005-switch-5-port\/",
+        "kategori": "networking",
+        "harga": "Rp 110.000",
+        "gambar": "\/katalog\/0078-tp-link-tl-ls1005-switch-5-port\/6caced3ba7be4d3597a9ec01e521daea~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_1ae14f97f1b953a3.webp"
+    },
+    
+    {
+        "judul": "\"TP-LINK LS1008 LiteWave 8-Port Desktop Switch\"",
+        "link": "\/katalog\/0190-tp-link-tl-ls1008-switch-8-port\/",
+        "kategori": "networking",
+        "harga": "Rp 140.000",
+        "gambar": "\/katalog\/0190-tp-link-tl-ls1008-switch-8-port\/5f24b7da-57b7-4df5-a938-ad65bdfb8ffa.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_825dfe7adf6d9029.webp"
+    },
+    
+    {
+        "judul": "\"TP-LINK TL-WN725N 150Mbps Wireless Nano USB Adapter\"",
+        "link": "\/katalog\/0170-usb-wifi-tl-wn725n\/",
+        "kategori": "networking",
+        "harga": "Rp 120.000",
+        "gambar": "\/katalog\/0170-usb-wifi-tl-wn725n\/687b24f3-e9d1-4cec-8d56-cae9ba4a61e4.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_8a622491cc3e15ae.webp"
+    },
+    
+    {
+        "judul": "\"USB 3.0 HUB Portable High Speed\"",
+        "link": "\/katalog\/0156-usb-3.0-hub-portable\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 25.000",
+        "gambar": "\/katalog\/0156-usb-3.0-hub-portable\/75eaa810-4046-46f1-9af4-0a6a119c0fd4.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_c0f65a77e3bfc6a9.webp"
+    },
+    
+    {
+        "judul": "\"USB Bluetooth 5.0 Dongle Adapter\"",
+        "link": "\/katalog\/0066-usb-bluetooth-5.0\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 30.000",
+        "gambar": "\/katalog\/0066-usb-bluetooth-5.0\/122fc413-c413-4f02-be4e-5f8ac4ddc86a.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_7322943cabf6a6a.webp"
+    },
+    
+    {
+        "judul": "\"USB Bluetooth 5.0 M-Tech BT-05\"",
+        "link": "\/katalog\/0193-usb-bluetooth-5-mtech-bt-05\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 30.000",
+        "gambar": "\/katalog\/0193-usb-bluetooth-5-mtech-bt-05\/eb19bc29239245b1bc2964be2fc5e704~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_9afc6bceb4b90436.webp"
+    },
+    
+    {
+        "judul": "\"USB HUB 2.0 7-Port dengan Saklar ON/OFF Individual\"",
+        "link": "\/katalog\/0086-hub-usb-saklar-7-port\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 50.000",
+        "gambar": "\/katalog\/0086-hub-usb-saklar-7-port\/894d6137edad44b2a08d314190c58987~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_a4916947ad22df4c.webp"
+    },
+    
+    {
+        "judul": "\"USB HUB 2.0 M-Tech 4 Port dengan Saklar On/Off\"",
+        "link": "\/katalog\/0067-usb-hub-2.0-mtech-4-port-saklar\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 35.000",
+        "gambar": "\/katalog\/0067-usb-hub-2.0-mtech-4-port-saklar\/4812297_33463cac-2e12-43a7-9dd6-c77945dc33db_2048_2048~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_7b2c49c81598e267.webp"
+    },
+    
+    {
+        "judul": "\"USB HUB 3.0 High Speed 4 Port\"",
+        "link": "\/katalog\/0068-usb-hub-3.0-4-port\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 50.000",
+        "gambar": "\/katalog\/0068-usb-hub-3.0-4-port\/43ecc18e-c943-44c0-9072-5e079f3cdaf2.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_e9700cd6e497c348.webp"
+    },
+    
+    {
+        "judul": "\"USB HUB 3.0 M-Tech 4 Port Kabel 1.2 Meter\"",
+        "link": "\/katalog\/0209-usb-hub-3.0-4-port-m-tech-1.2m\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 80.000",
+        "gambar": "\/katalog\/0209-usb-hub-3.0-4-port-m-tech-1.2m\/8eb3e886efb644a593c21092f88fb5f6~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_291ca7a58c7469b4.webp"
+    },
+    
+    {
+        "judul": "\"USB LAN Card\"",
+        "link": "\/katalog\/0006-usb-lan-card\/",
+        "kategori": "networking",
+        "harga": "Rp 45.000",
+        "gambar": "\/katalog\/0006-usb-lan-card\/adeb5856-8d13-4f92-846c-ff37a0c5251f.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_697c71cc373d8765.webp"
+    },
+    
+    {
+        "judul": "\"USB Sound Card External 7.1 Channel\"",
+        "link": "\/katalog\/0069-usb-sound-card\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 25.000",
+        "gambar": "\/katalog\/0069-usb-sound-card\/01aa65b1-b6bd-4616-b927-69ef80005034.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_f5874fab04039988.webp"
+    },
+    
+    {
+        "judul": "\"USB WiFi Adapter 600Mbps High Gain (Merah)\"",
+        "link": "\/katalog\/0071-usb-wifi-adapter-600m-merah\/",
+        "kategori": "networking",
+        "harga": "Rp 50.000",
+        "gambar": "\/katalog\/0071-usb-wifi-adapter-600m-merah\/43288a16-b52e-4987-9efe-3468cb40d99f.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_630e83b199c6a54e.webp"
+    },
+    
+    {
+        "judul": "\"USB WiFi Adapter EZTECH High Speed\"",
+        "link": "\/katalog\/0167-usb-wifi-eztech\/",
+        "kategori": "networking",
+        "harga": "Rp 80.000",
+        "gambar": "\/katalog\/0167-usb-wifi-eztech\/f9a0d35b959e46b9b6a6e2309722d30d~tplv-o3syd03w52-resize-jpeg_1600_1600_hu_142014abc9539ec3.webp"
+    },
+    
+    {
+        "judul": "\"USB Wifi Adapter Wireless 802.11N 150Mbps (Putih)\"",
+        "link": "\/katalog\/0070-usb-wifi-2.0-wireless-802.11n-putih\/",
+        "kategori": "networking",
+        "harga": "Rp 25.000",
+        "gambar": "\/katalog\/0070-usb-wifi-2.0-wireless-802.11n-putih\/5749abe4b2834a638a3deff71f4ea9c1~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_4029c3e64e6dd590.webp"
+    },
+    
+    {
+        "judul": "\"USB WiFi Dongle Khusus Set Top Box (STB) \\u0026 Receiver\"",
+        "link": "\/katalog\/0072-usb-wifi-dongle-stb-set-top-box\/",
+        "kategori": "networking",
+        "harga": "Rp 50.000",
+        "gambar": "\/katalog\/0072-usb-wifi-dongle-stb-set-top-box\/a89d0b4a440142cc8f31f96d74f66509~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_9ab8252e57c8fb6d.webp"
+    },
+    
+    {
+        "judul": "\"USB WiFi M-Tech UW-01 Nano Adapter\"",
+        "link": "\/katalog\/0168-usb-wifi-mtech-uw-01\/",
+        "kategori": "networking",
+        "harga": "Rp 35.000",
+        "gambar": "\/katalog\/0168-usb-wifi-mtech-uw-01\/bb888acc89b94ed2aa8e37dde99c2878~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_b81c672ee154bb89.webp"
+    },
+    
+    {
+        "judul": "\"USB WiFi M-Tech with External Antenna\"",
+        "link": "\/katalog\/0169-usb-wifi-mtech-antena\/",
+        "kategori": "networking",
+        "harga": "Rp 55.000",
+        "gambar": "\/katalog\/0169-usb-wifi-mtech-antena\/5794a7f95031471e8a216e700a6e52fb~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_7ded161b451e6c18.webp"
+    },
+    
+    {
+        "judul": "\"VGA Splitter 1-in 2-out (Pasif)\"",
+        "link": "\/katalog\/0139-vga-splitter-1-to-2-port\/",
+        "kategori": "konektivitas",
+        "harga": "Rp 80.000",
+        "gambar": "\/katalog\/0139-vga-splitter-1-to-2-port\/4983479_3bb519e5-411f-409f-be85-a4cb44c41f79_787_787.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_ba9d727d7ef070bd.webp"
+    },
+    
+    {
+        "judul": "\"Webcam HD 720P Sonix Chipset Raptor W7 with Mic\"",
+        "link": "\/katalog\/0073-webcam-720p-sonix-chipset-raptor-w7-microphone-pc\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 120.000",
+        "gambar": "\/katalog\/0073-webcam-720p-sonix-chipset-raptor-w7-microphone-pc\/549c6c4f-4195-4a52-be5b-bbef24fadc92.jpg~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_a8668f9e6f892787.webp"
+    },
+    
+    {
+        "judul": "\"Wireless Laser Presenter Taffware K100\"",
+        "link": "\/katalog\/0151-presenter-taffware-k100\/",
+        "kategori": "aksesoris",
+        "harga": "Rp 70.000",
+        "gambar": "\/katalog\/0151-presenter-taffware-k100\/2151424b24ee4b9b81eec6659f2180a9~tplv-o3syd03w52-resize-jpeg_1600_1600_hu_544691ec6436625c.webp"
+    },
+    
+    {
+        "judul": "\"Wireless-N WiFi Repeater 300Mbps\"",
+        "link": "\/katalog\/0121-wireless-n-wifi-repeater\/",
+        "kategori": "networking",
+        "harga": "Rp 95.000",
+        "gambar": "\/katalog\/0121-wireless-n-wifi-repeater\/b9eca78e4eaa4914980cdb734e2fb9dd~tplv-aphluv4xwc-white-pad-v1_1600_1600_hu_84471d0ca928b8b1.webp"
+    },
+    
+];
+
+
+const htmlProdukAsli = document.getElementById('daftarProduk').innerHTML;
+const htmlPaginasiAsli = document.getElementById('paginasiKontainer').innerHTML;
+
+function filterSemua() {
+    const keyword = document.getElementById("inputCari").value.toLowerCase();
+    const kategori = document.getElementById("filterKategori").value.toLowerCase();
+    const container = document.getElementById("daftarProduk");
+    const paginasi = document.getElementById("paginasiKontainer");
+
+    
+    if (keyword === "" && kategori === "semua") {
+        container.innerHTML = htmlProdukAsli;
+        paginasi.innerHTML = htmlPaginasiAsli;
+        return;
+    }
+
+    
+    paginasi.innerHTML = "";
+
+    
+    const hasil = bankDataKatalog.filter(item => {
+        const cocokCari = item.judul.toLowerCase().includes(keyword);
+        const cocokKategori = (kategori === "semua" || item.kategori === kategori);
+        return cocokCari && cocokKategori;
+    });
+
+    
+    if (hasil.length > 0) {
+        container.innerHTML = hasil.map(item => `
+            <div class="product-card">
+                <a href="${item.link}" style="text-decoration: none; color: inherit;">
+                    <div class="product-image" style="height: 150px; background: #f0f2f5; border-radius: 12px; overflow: hidden;">
+                        ${item.gambar !== 'placeholder' ? `<img src="${item.gambar}" style="width: 100%; height: 100%; object-fit: cover;">` : `<div style="height: 100%; display: flex; align-items: center; justify-content: center; background: #e8f0fe; color: #1a73e8;"><i class="fas fa-box-open" style="font-size: 25px;"></i></div>`}
+                    </div>
+                    <div class="product-info" style="padding: 8px;">
+                        <div class="product-name" style="font-size: 13px; font-weight: 600; line-height: 1.4; height: 38px; overflow: hidden;">${item.judul}</div>
+                        <div class="product-price" style="color: #d93025; font-weight: bold; font-size: 13px; margin-top: 5px;">${item.harga}</div>
+                    </div>
+                </a>
+            </div>
+        `).join('');
+    } else {
+        container.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 50px; color: #999;">Barang tidak ditemukan...</div>`;
+    }
+}
+</script>
+
+    </main>
+
+<nav class="bottom-nav">
+    <a href="/" class="nav-item ">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+    </a>
+    <a href="/servis/" class="nav-item ">
+        <i class="fas fa-tools"></i>
+        <span>Servis</span>
+    </a>
+    <a href="/katalog/" class="nav-item active">
+        <i class="fas fa-store"></i>
+        <span>Katalog</span>
+    </a>
+    <a href="/artikel/" class="nav-item ">
+        <i class="fas fa-newspaper"></i>
+        <span>Artikel</span>
+    </a>
+</nav>
+</body>
+</html>
